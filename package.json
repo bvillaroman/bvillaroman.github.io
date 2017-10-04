@@ -17,5 +17,8 @@
     "react-dom": "^16.0.0",
     "react-helmet": "^5.2.0",
     "react-masonry-component": "^5.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
