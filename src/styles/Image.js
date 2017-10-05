@@ -1,15 +1,27 @@
 import {Landscape,Portrait,MasonryImage} from './image.style.js'
 import React from 'react';
+import ImageZoom from 'react-medium-image-zoom';
 
 let Image = function statelessFunctionComponentClass(props) {
     let source = props.source.slice(0,61) + "c_scale,w_600/" + props.source.slice(61)
-    if(props.orientation === 'p'){
-      return <Portrait src = {source}/>
-    }
-    else if(props.orientation === 'l'){
-      return <Landscape src = {source}/>
-    }
-    else return <MasonryImage src = {source}/>
+
+    return <ImageZoom
+      image={{
+        src: source,
+        alt: 'Golden Gate Bridge',
+        className: 'img',
+        style: {width : `350px`,
+          margin : `auto`,
+          paddingBottom : `20px`,
+          paddingTop : `20px`,
+          paddingRight : `20px`,
+          cursor : `pointer`}
+      }}
+      zoomImage={{
+        src: props.source,
+        alt: 'Golden Gate Bridge'
+      }}
+    />
 }
 
 export default Image;
