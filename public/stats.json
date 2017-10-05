@@ -1,0 +1,58 @@
+{
+  "assetsByChunkName": {
+    "path---portraits": [
+      "path---portraits-a0e39f21c11f6a62c5ab.js",
+      "path---portraits-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---shoots": [
+      "path---shoots-a0e39f21c11f6a62c5ab.js",
+      "path---shoots-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-72f3d245a448c5eaf9c6.js",
+      "component---src-pages-index-js-72f3d245a448c5eaf9c6.js.map"
+    ],
+    "component---src-pages-portraits-js": [
+      "component---src-pages-portraits-js-52fb2cc803b6c7dae030.js",
+      "component---src-pages-portraits-js-52fb2cc803b6c7dae030.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-08967b64dc1857611c9f.js",
+      "component---src-layouts-index-js-08967b64dc1857611c9f.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-6f4b33c9b5a83af8bd2a.js",
+      "commons-6f4b33c9b5a83af8bd2a.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-shoots-js": [
+      "component---src-pages-shoots-js-3a6005b85f34b9e65faf.js",
+      "component---src-pages-shoots-js-3a6005b85f34b9e65faf.js.map"
+    ],
+    "app": [
+      "app-75732fcb8fc0ff042e8c.js",
+      "build-js-styles.css",
+      "app-75732fcb8fc0ff042e8c.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
