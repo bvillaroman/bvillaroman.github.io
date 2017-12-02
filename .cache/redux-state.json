@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "component": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
-      "updatedAt": 1512234637445,
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7cac843c1b3e1b844e33ff22819f127b",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -336,16 +326,14 @@
     },
     "Site": {
       "siteMetadata": {},
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "/bvillaroman.github.io",
       "polyfill": true,
-      "buildTime": "2017-12-02T17:10:34.495Z",
+      "buildTime": "2017-12-02T18:15:49.594Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "898edd606fd848919a5c5a10d50f2457",
+        "contentDigest": "a79d04ca8019aea796de75ebef9986b6",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -357,7 +345,7 @@
       "layout": "index",
       "jsonName": "404.json",
       "internalComponentName": "Component404",
-      "updatedAt": 1512234637467,
+      "updatedAt": 1512238552697,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -367,7 +355,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "617a9bbecb50bfc7bccf60a5876fe84a",
+        "contentDigest": "0afebf1c10cf839f5d601949b08d2554",
         "owner": "internal-data-bridge"
       }
     },
@@ -378,7 +366,7 @@
       "layout": "index",
       "jsonName": "portraits.json",
       "internalComponentName": "ComponentPortraits",
-      "updatedAt": 1512234637469,
+      "updatedAt": 1512238552698,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -388,7 +376,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "687a461d659f83f5b45aa1b1382e74dd",
+        "contentDigest": "111370673cdcffdf12c8e5d0ea03bb91",
         "owner": "internal-data-bridge"
       }
     },
@@ -399,7 +387,7 @@
       "layout": "index",
       "jsonName": "shoots.json",
       "internalComponentName": "ComponentShoots",
-      "updatedAt": 1512234637471,
+      "updatedAt": 1512238552701,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -409,7 +397,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2bca5b7cbd5fdcca146a2d7d5e61fb45",
+        "contentDigest": "784537fa8eb7fad8172e549d250caa5e",
         "owner": "internal-data-bridge"
       }
     },
@@ -420,7 +408,7 @@
       "layout": "index",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1512234637471,
+      "updatedAt": 1512238552703,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -430,7 +418,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6bfb33b72fb26279c237a9f348fd0723",
+        "contentDigest": "e340d3ecb9a7bbb4bc567ff3c6d83849",
         "owner": "internal-data-bridge"
       }
     },
@@ -441,7 +429,7 @@
       "layout": "index",
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
-      "updatedAt": 1512234637474,
+      "updatedAt": 1512238552709,
       "context": {},
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
@@ -451,7 +439,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0cc47e42d11edbdea55d0fe184a03624",
+        "contentDigest": "4077accec29eb3f29560b7ad320f3ffb",
         "owner": "internal-data-bridge"
       }
     }
