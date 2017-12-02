@@ -1,6 +1,10 @@
 {
 
     "home" : [
+            "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234992/norphel-10_elzhja.jpg",
+            "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234957/11-12-17-8_bsfybi.jpg",
+            "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234929/11-10-17-18_usicld.jpg",
+            "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234902/11-10-17-1_ci2ch0.jpg",
             "http://res.cloudinary.com/dyeerzayu/image/upload/v1510017793/aya_uajmmh.jpg",
             "http://res.cloudinary.com/dyeerzayu/image/upload/v1510018257/harrold_rcl32n.jpg",
             "http://res.cloudinary.com/dyeerzayu/image/upload/v1506817486/9-27-17-3_impzxg.jpg",
@@ -22,7 +26,12 @@
             "http://res.cloudinary.com/dyeerzayu/image/upload/v1497133913/4-23-17-2_tju4pe.jpg"
     ],
     "portraits" : [
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234992/norphel-10_elzhja.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234986/micah_extra_ly5vlt.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1510018255/jeff_iq0cll.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234965/11-19-17-17_yfg5ho.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234937/11-10-17-6_scdf52.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234929/11-10-17-18_usicld.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1510018257/harrold_rcl32n.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1506817494/9-27-17-25_zrouqr.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1506817411/9-20-19-17_rgg5ot.jpg",
@@ -46,6 +55,14 @@
 
                   ],
     "shoots" :[
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234957/11-12-17-8_bsfybi.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234952/11-12-17-5_wvkhy1.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234949/11-12-17-2_j6zboy.jpg",
+
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234902/11-10-17-1_ci2ch0.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234923/11-10-17-4_izwsfc.jpg",
+                "http://res.cloudinary.com/dyeerzayu/image/upload/v1512234938/11-10-17-24_sqz6tv.jpg",
+
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1510017800/liggayu_fqiohr.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1510017793/aya_uajmmh.jpg",
                 "http://res.cloudinary.com/dyeerzayu/image/upload/v1510017796/group_toast_ik1boc.jpg",

@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "component": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "updatedAt": 1512234637445,
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "7cac843c1b3e1b844e33ff22819f127b",
         "owner": "internal-data-bridge"
       }
     },
@@ -251,70 +261,11 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin gatsby-plugin-favicon": {
-      "resolve": "/Users/bruce/bvillaroman/node_modules/gatsby-plugin-favicon",
-      "id": "Plugin gatsby-plugin-favicon",
-      "name": "gatsby-plugin-favicon",
-      "version": "2.0.0",
-      "pluginOptions": {
-        "plugins": [],
-        "logo": "./src/favicon.png",
-        "icons": {
-          "android": true,
-          "appleIcon": true,
-          "appleStartup": true,
-          "coast": false,
-          "favicons": true,
-          "firefox": true,
-          "twitter": false,
-          "yandex": false,
-          "windows": false
-        }
-      },
-      "pluginFilepath": "/Users/bruce/bvillaroman/node_modules/gatsby-plugin-favicon",
-      "packageJson": {
-        "name": "gatsby-plugin-favicon",
-        "description": "Gatsby plugin to add favicon for all configurations",
-        "version": "2.0.0",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "favicon"
-        ],
-        "author": {
-          "name": "Julien Blatecky",
-          "email": "julien.blatecky@creatiwity.net"
-        },
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "favicons-webpack-plugin",
-            "version": "0.0.7"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "babel-cli",
-            "version": "^6.26.0"
-          }
-        ],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "4da90107581b0aa5a56a919fb0692ea8",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
     "Plugin default-site-plugin": {
       "resolve": "/Users/bruce/bvillaroman",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "ae59d84806fddd419fa85dab3f4eecdd",
+      "version": "91aeca739ed4189d09d433fbb5808916",
       "pluginOptions": {
         "plugins": []
       },
@@ -362,7 +313,7 @@
           },
           {
             "name": "react-medium-image-zoom",
-            "version": "^2.0.3"
+            "version": "^2.0.6"
           }
         ],
         "devDependencies": [
@@ -378,21 +329,23 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "10d0c6a0e0de737311c7c61594053f54",
+        "contentDigest": "f755d50cadc596f524e39eba15971031",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {},
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "/bvillaroman.github.io",
       "polyfill": true,
-      "buildTime": "2017-11-08T18:43:57.310Z",
+      "buildTime": "2017-12-02T17:10:34.495Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d53e2344264c8b0b54ea4fa4518b6e03",
+        "contentDigest": "898edd606fd848919a5c5a10d50f2457",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -404,7 +357,7 @@
       "layout": "index",
       "jsonName": "404.json",
       "internalComponentName": "Component404",
-      "updatedAt": 1510166639659,
+      "updatedAt": 1512234637467,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -414,7 +367,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fb7fe2432d15f15e75f04e2a541ebd7e",
+        "contentDigest": "617a9bbecb50bfc7bccf60a5876fe84a",
         "owner": "internal-data-bridge"
       }
     },
@@ -425,7 +378,7 @@
       "layout": "index",
       "jsonName": "portraits.json",
       "internalComponentName": "ComponentPortraits",
-      "updatedAt": 1510166639659,
+      "updatedAt": 1512234637469,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -435,7 +388,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b838b8520c2fb0df07fbf431346b8ec0",
+        "contentDigest": "687a461d659f83f5b45aa1b1382e74dd",
         "owner": "internal-data-bridge"
       }
     },
@@ -446,7 +399,7 @@
       "layout": "index",
       "jsonName": "shoots.json",
       "internalComponentName": "ComponentShoots",
-      "updatedAt": 1510166639661,
+      "updatedAt": 1512234637471,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -456,7 +409,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2cb6390a0075f758bac80f30617dd62d",
+        "contentDigest": "2bca5b7cbd5fdcca146a2d7d5e61fb45",
         "owner": "internal-data-bridge"
       }
     },
@@ -467,7 +420,7 @@
       "layout": "index",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1510166639664,
+      "updatedAt": 1512234637471,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -477,7 +430,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "20123827bc6342024fe3ef0a5365d16b",
+        "contentDigest": "6bfb33b72fb26279c237a9f348fd0723",
         "owner": "internal-data-bridge"
       }
     },
@@ -488,7 +441,7 @@
       "layout": "index",
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
-      "updatedAt": 1510166639669,
+      "updatedAt": 1512234637474,
       "context": {},
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
@@ -498,14 +451,14 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9806fd029d0a571485b3752ccffe7ec0",
+        "contentDigest": "0cc47e42d11edbdea55d0fe184a03624",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "1df2a0052a1023c463252fceb49be019"
+    "PLUGINS_HASH": "fea4337b9f892d41677b117b1ee30247"
   },
   "componentDataDependencies": {
     "nodes": {},
