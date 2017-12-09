@@ -7,7 +7,7 @@
       "layout": "index",
       "jsonName": "dev-404-page.json",
       "internalComponentName": "ComponentDev404Page",
-      "updatedAt": 1512851113256,
+      "updatedAt": 1512851315835,
       "context": {},
       "pluginCreator___NODE": "Plugin dev-404-page",
       "pluginCreatorId": "Plugin dev-404-page",
@@ -17,7 +17,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4853b79e9998a4ac466ddd9c4f2bd148",
+        "contentDigest": "eac9ea8b5bde8cd081538ea356d766ee",
         "owner": "internal-data-bridge"
       }
     },
@@ -338,14 +338,12 @@
       "siteMetadata": {},
       "port": "8000",
       "host": "localhost",
-      "pathPrefix": "/bvillaroman.github.io",
-      "polyfill": true,
       "buildTime": "2017-12-09T20:25:07.525Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c185fa97e053d36673fe236728a9055e",
+        "contentDigest": "0c4a7898e661387d0792f52cde2b6f75",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
