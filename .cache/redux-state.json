@@ -328,12 +328,12 @@
       "siteMetadata": {},
       "pathPrefix": "/bvillaroman.github.io",
       "polyfill": true,
-      "buildTime": "2017-12-09T19:51:10.939Z",
+      "buildTime": "2017-12-09T20:02:59.199Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "3300e503e4220b9f5a4d364b1388222b",
+        "contentDigest": "a30678943ba366a09d57c519ed9eca4d",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -345,7 +345,7 @@
       "layout": "index",
       "jsonName": "404.json",
       "internalComponentName": "Component404",
-      "updatedAt": 1512849074263,
+      "updatedAt": 1512849781771,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -355,7 +355,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b9a0992f45fa0cb5881634e47306be7d",
+        "contentDigest": "280e73242b84d3a5714405a53bc8d4bb",
         "owner": "internal-data-bridge"
       }
     },
@@ -366,7 +366,7 @@
       "layout": "index",
       "jsonName": "portraits.json",
       "internalComponentName": "ComponentPortraits",
-      "updatedAt": 1512849074264,
+      "updatedAt": 1512849781772,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -376,7 +376,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cbb4050bfbbfd6226785218d7ac3006a",
+        "contentDigest": "8e345cecc2c05722c3d4defe573c0417",
         "owner": "internal-data-bridge"
       }
     },
@@ -387,7 +387,7 @@
       "layout": "index",
       "jsonName": "shoots.json",
       "internalComponentName": "ComponentShoots",
-      "updatedAt": 1512849074265,
+      "updatedAt": 1512849781773,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -397,7 +397,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dae154bea880fc844ae9f6c918efb045",
+        "contentDigest": "25906dd3bc326a31e0fe20eab2c6e16a",
         "owner": "internal-data-bridge"
       }
     },
@@ -408,7 +408,7 @@
       "layout": "index",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1512849074266,
+      "updatedAt": 1512849781774,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -418,7 +418,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "44d5bfca4c5ce53b53fb2d8549d70285",
+        "contentDigest": "40e1e6b5e2cbef44ba77c43bc168a1a7",
         "owner": "internal-data-bridge"
       }
     },
@@ -429,7 +429,7 @@
       "layout": "index",
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
-      "updatedAt": 1512849074269,
+      "updatedAt": 1512849781776,
       "context": {},
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
@@ -439,7 +439,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f3b57da62c5085a8affa4066a769ee06",
+        "contentDigest": "5839af0acb37577cbbe084e1a734be83",
         "owner": "internal-data-bridge"
       }
     }
