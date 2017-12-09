@@ -3,7 +3,6 @@ const preferDefault = m => m && m.default || m
 
 
 exports.components = {
-  "component---cache-dev-404-page-js": preferDefault(require("/Users/bruce/bvillaroman/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/bruce/bvillaroman/src/pages/404.js")),
   "component---src-pages-portraits-js": preferDefault(require("/Users/bruce/bvillaroman/src/pages/Portraits.js")),
   "component---src-pages-shoots-js": preferDefault(require("/Users/bruce/bvillaroman/src/pages/Shoots.js")),
@@ -11,8 +10,6 @@ exports.components = {
 }
 
 exports.json = {
-  "layout-index.json": require("/Users/bruce/bvillaroman/.cache/json/layout-index.json"),
-  "dev-404-page.json": require("/Users/bruce/bvillaroman/.cache/json/dev-404-page.json"),
   "layout-index.json": require("/Users/bruce/bvillaroman/.cache/json/layout-index.json"),
   "404.json": require("/Users/bruce/bvillaroman/.cache/json/404.json"),
   "layout-index.json": require("/Users/bruce/bvillaroman/.cache/json/layout-index.json"),
