@@ -1,4 +1,3 @@
-import {Landscape,Portrait,MasonryImage} from './image.style.js'
 import React from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 
@@ -10,12 +9,13 @@ let Image = function statelessFunctionComponentClass(props) {
         src: source,
         alt: 'Golden Gate Bridge',
         className: 'img',
-        style: {width : `350px`,
+        style: {
+          width : `350px`,
           margin : `auto`,
-          paddingBottom : `20px`,
-          paddingTop : `20px`,
-          paddingRight : `20px`,
-          cursor : `pointer`}
+          padding: `20px`,
+          cursor : `pointer`,
+
+          }
       }}
       zoomImage={{
         src: props.source,

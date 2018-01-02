@@ -2,9 +2,9 @@ import {injectGlobal} from 'styled-components';
 
 /* eslint-disable */
 injectGlobal`
-    @import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
     body{
-      font-family: 'Noto Sans', sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 `;

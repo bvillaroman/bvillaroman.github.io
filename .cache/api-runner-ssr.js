@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/bruce/bvillaroman/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/bruce/bvillaroman/node_modules/gatsby-plugin-favicon/gatsby-ssr.js'),
+      options: {"plugins":[],"logo":"./src/favicon.png","injectHTML":true,"icons":{"android":true,"appleIcon":true,"appleStartup":true,"coast":false,"favicons":true,"firefox":true,"twitter":false,"yandex":false,"windows":false}},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

@@ -5,28 +5,26 @@ import  {
   NavbarLink,
   FooterItem
 } from '../styles/HeaderStyles.js'
-import  {Container} from '../styles/Container.js'
+import  {Container,Background} from '../styles/Container.js'
 import Helmet from 'react-helmet'
 import '../styles/globalStyle.js'
 import './index.css'
+
+const scrollToBottom = () => {
+    this.messageEnd.scrollIntoView({behavior : "smooth"});
+}
 
 const Header = () => (
     <HFContainer>
           <NavbarLink to = "/">HOME</NavbarLink>
           <NavbarLink to = "/Portraits/">PORTRAITS</NavbarLink>
           <NavbarLink to = "/Shoots/">SHOOTS</NavbarLink>
+          <NavbarLink to = "/About/">ABOUT</NavbarLink>
     </HFContainer>
 )
 
-const Footer = () => (
-  <HFContainer>
-    <FooterItem>ABRAHAM BRUCE VILLAROMAN</FooterItem>
-    <FooterItem>BVILLAROMAN@GMAIL.COM</FooterItem>
-    <FooterItem>631-871-9578</FooterItem>
-  </HFContainer>
-)
-
 const TemplateWrapper = ({ children }) => (
+
   <Container>
     <Helmet
       title="BVILLAROMAN"
@@ -37,7 +35,6 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
       {children()}
-    <Footer />
   </Container>
 )
 

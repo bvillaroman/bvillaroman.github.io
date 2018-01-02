@@ -24,8 +24,7 @@ class Portraits extends React.Component{
             options={masonryOptions}
             disableImagesLoaded={false}
             updateOnEachImageLoad={false}
-            style = {{paddingLeft : 15,
-                      paddingRight : 15}}
+          
           >
                     {this.images}
           </GridContainer>
