@@ -2,12 +2,14 @@ import React from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 
 let Image = function statelessFunctionComponentClass(props) {
-    let source = props.source.slice(0,61) + "c_scale,w_600/" + props.source.slice(61)
+    let thumbnail = "http://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/c_scale,w_600/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
+
+    let source = "http://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
 
     return <ImageZoom
       image={{
-        src: source,
-        alt: 'Golden Gate Bridge',
+        src: thumbnail,
+        alt: props.source.public_id,
         className: 'img',
         style: {
           width : `350px`,
@@ -18,8 +20,8 @@ let Image = function statelessFunctionComponentClass(props) {
           }
       }}
       zoomImage={{
-        src: props.source,
-        alt: 'Golden Gate Bridge'
+        src: source,
+        alt: props.source.public_id
       }}
     />
 }

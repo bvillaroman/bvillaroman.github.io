@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title : "bvillaroman",
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     {
@@ -18,6 +21,6 @@ module.exports = {
             windows: false
           }
       }
-    }
+    },
   ]
 }

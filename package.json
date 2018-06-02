@@ -9,6 +9,7 @@
     "deploy": "gatsby build && gh-pages -d public --branch master"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
     "gatsby-plugin-favicon": "^2.1.1",
