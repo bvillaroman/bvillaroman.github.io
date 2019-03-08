@@ -1,6 +1,6 @@
 import React from 'react'
 import {masonryOptions,GridContainer} from '../styles/Container.js'
-import Image from '../components/Image.js/index.js'
+import Image from '../components/Image'
 import Axios from 'axios'
 
 class IndexPage extends React.Component{
