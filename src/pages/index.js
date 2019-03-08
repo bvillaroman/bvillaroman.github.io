@@ -1,16 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import {masonryOptions,GridContainer} from '../styles/Container.js'
-import Image from '../styles/Image.js'
+import Image from '../components/Image.js/index.js'
 import Axios from 'axios'
 
 class IndexPage extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            images : [],
-        }
-    }
+    state = { images : []}
 
     createImage(image){ return <Image source ={image} /> }
 
@@ -32,7 +26,7 @@ class IndexPage extends React.Component{
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
             >
-                        {this.state.images}
+                {this.state.images}
             </GridContainer>
         );
     }

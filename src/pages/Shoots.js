@@ -1,17 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Image from '../styles/Image.js'
-import { Grid,Row,Col} from 'react-bootstrap';
+import Image from '../components/Image.js'
 import {masonryOptions,GridContainer} from '../styles/Container.js'
 import Axios from 'axios'
 
 class Shoots extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            images: [],
-        }
-    }
+    state = { images: [] }
 
     createImage(image){
         return <Image source ={image}/>
@@ -36,7 +29,7 @@ class Shoots extends React.Component{
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
             >
-                    {this.state.images}
+                {this.state.images}
             </GridContainer>
         );
     }

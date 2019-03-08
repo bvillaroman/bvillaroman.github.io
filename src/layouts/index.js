@@ -3,16 +3,11 @@ import PropTypes from 'prop-types'
 import  {
   HFContainer,
   NavbarLink,
-  FooterItem
 } from '../styles/HeaderStyles.js'
 import  {Container,Background} from '../styles/Container.js'
 import Helmet from 'react-helmet'
 import '../styles/globalStyle.js'
 import './index.css'
-
-const scrollToBottom = () => {
-    this.messageEnd.scrollIntoView({behavior : "smooth"});
-}
 
 const Header = () => (
     <HFContainer>

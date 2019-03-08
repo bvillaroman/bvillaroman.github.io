@@ -1,20 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import {masonryOptions,GridContainer} from '../styles/Container.js'
-import Image from '../styles/Image.js'
+import Image from '../components/Image.js'
 import Axios from 'axios'
 
 class Portraits extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            images : [],
-        }
-    }
+    state = { images : [] }
 
-    createImage(image){
-        return <Image source ={image}/>
-    }
+    createImage(image){  return <Image source={image}/> }
 
     componentDidMount(){
         Axios.get("http://res.cloudinary.com/dyeerzayu/image/list/portraits.json")
@@ -35,7 +27,7 @@ class Portraits extends React.Component{
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
             >
-                        {this.state.images}
+                {this.state.images}
             </GridContainer>
         );
     }
