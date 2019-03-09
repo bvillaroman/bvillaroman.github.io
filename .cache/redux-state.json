@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "component": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "path": "/dev-404-page/",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
-      "updatedAt": 1552088352247,
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/bruce/bvillaroman/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b75ffd2474fe53b720607668af77721f",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -261,6 +251,71 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-stripe": {
+      "resolve": "/Users/bruce/bvillaroman/node_modules/gatsby-plugin-stripe",
+      "id": "Plugin gatsby-plugin-stripe",
+      "name": "gatsby-plugin-stripe",
+      "version": "1.2.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "pluginFilepath": "/Users/bruce/bvillaroman/node_modules/gatsby-plugin-stripe",
+      "packageJson": {
+        "name": "gatsby-plugin-stripe",
+        "description": "Gatsby plugin that adds stripe.js to site",
+        "version": "1.2.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "stripe",
+          "stripe.js"
+        ],
+        "author": {
+          "name": "Nathan Beck",
+          "email": "njosefbeck@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "6.26.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "1.7.0"
+          },
+          {
+            "name": "babel-preset-react",
+            "version": "6.24.1"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "5.2.0"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">=1"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "5ea4a13d977950c71af11f1ed8e5bdc9",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin gatsby-plugin-favicon": {
       "resolve": "/Users/bruce/bvillaroman/node_modules/gatsby-plugin-favicon",
       "id": "Plugin gatsby-plugin-favicon",
@@ -345,7 +400,7 @@
       "resolve": "/Users/bruce/bvillaroman",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "27d004da24055f32175457431e15273f",
+      "version": "fe8df6d4d66880306a95732f3eff6d90",
       "pluginOptions": {
         "plugins": []
       },
@@ -370,6 +425,14 @@
           {
             "name": "gatsby-plugin-favicon",
             "version": "^2.1.1"
+          },
+          {
+            "name": "gatsby-plugin-stripe",
+            "version": "^1.2.0"
+          },
+          {
+            "name": "gatsby-plugin-stripe-checkout",
+            "version": "^1.1.2"
           },
           {
             "name": "gatsby-plugin-styled-components",
@@ -400,6 +463,10 @@
             "version": "^2.0.6"
           },
           {
+            "name": "react-stripe-elements",
+            "version": "^2.0.3"
+          },
+          {
             "name": "react-transition-group",
             "version": "^2.2.1"
           }
@@ -417,7 +484,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "f98fd56ce7a44a4a73726bfd859a96c6",
+        "contentDigest": "c0a4667c6c324dc8e8f74368dfb9bb34",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -426,16 +493,14 @@
       "siteMetadata": {
         "title": "bvillaroman"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-08T23:39:03.062Z",
+      "buildTime": "2019-03-09T17:15:24.443Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "586f83201ae60ece868e88689c57af55",
+        "contentDigest": "f60de01bebfeaba982a58e9bcb66af89",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -447,7 +512,7 @@
       "layout": "index",
       "jsonName": "404.json",
       "internalComponentName": "Component404",
-      "updatedAt": 1552088352257,
+      "updatedAt": 1552151730269,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -457,7 +522,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a1600ac049512e67061c1bb3d237b194",
+        "contentDigest": "005604022f2664c5aa69843c8df2ed5e",
         "owner": "internal-data-bridge"
       }
     },
@@ -468,7 +533,7 @@
       "layout": "index",
       "jsonName": "portraits.json",
       "internalComponentName": "ComponentPortraits",
-      "updatedAt": 1552088352258,
+      "updatedAt": 1552151730270,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -478,7 +543,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4932fd296d2f302c14f814501e22361e",
+        "contentDigest": "e0a4cb99f6e7c6668fb6b2d4beae7730",
         "owner": "internal-data-bridge"
       }
     },
@@ -489,7 +554,7 @@
       "layout": "index",
       "jsonName": "shoots.json",
       "internalComponentName": "ComponentShoots",
-      "updatedAt": 1552088352258,
+      "updatedAt": 1552151730271,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -499,7 +564,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9d0dd449f1bd1a2f146ba5fe39d5026c",
+        "contentDigest": "9fea8fc145788791adcb8dbeb07b5909",
         "owner": "internal-data-bridge"
       }
     },
@@ -510,7 +575,7 @@
       "layout": "index",
       "jsonName": "about.json",
       "internalComponentName": "ComponentAbout",
-      "updatedAt": 1552088352259,
+      "updatedAt": 1552151730272,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -520,7 +585,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e0a1b2d5dfaf27a70b653ed1ea6c6361",
+        "contentDigest": "ff82ede716bee7a83fb7a3734d3d20a7",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /failure/": {
+      "path": "/failure/",
+      "component": "/Users/bruce/bvillaroman/src/pages/failure.js",
+      "componentChunkName": "component---src-pages-failure-js",
+      "layout": "index",
+      "jsonName": "failure.json",
+      "internalComponentName": "ComponentFailure",
+      "updatedAt": 1552151730273,
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/bruce/bvillaroman/src/pages/failure.js",
+      "id": "SitePage /failure/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "163af2b040bcae27562ad09217e2631d",
         "owner": "internal-data-bridge"
       }
     },
@@ -531,7 +617,7 @@
       "layout": "index",
       "jsonName": "index.json",
       "internalComponentName": "ComponentIndex",
-      "updatedAt": 1552088352260,
+      "updatedAt": 1552151730273,
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
@@ -541,7 +627,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "54e3f2190604475f35aeb903542a2075",
+        "contentDigest": "6bd8e4cd5f008caa0ddf013469f38a6f",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /success/": {
+      "path": "/success/",
+      "component": "/Users/bruce/bvillaroman/src/pages/success.js",
+      "componentChunkName": "component---src-pages-success-js",
+      "layout": "index",
+      "jsonName": "success.json",
+      "internalComponentName": "ComponentSuccess",
+      "updatedAt": 1552151730274,
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/bruce/bvillaroman/src/pages/success.js",
+      "id": "SitePage /success/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "459daff0cbbf2de28bf61b456f14429f",
         "owner": "internal-data-bridge"
       }
     },
@@ -552,7 +659,7 @@
       "layout": "index",
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
-      "updatedAt": 1552088352266,
+      "updatedAt": 1552151730280,
       "context": {},
       "pluginCreator___NODE": "Plugin prod-404",
       "pluginCreatorId": "Plugin prod-404",
@@ -562,14 +669,14 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6f797ff650919c21d9ce92436cc204e0",
+        "contentDigest": "129983f76fc92fde1c285208983fb120",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "8a2233be706cb60f85d172e97999af32"
+    "PLUGINS_HASH": "63869b063351035ad5f160fad6006657"
   },
   "componentDataDependencies": {
     "nodes": {},

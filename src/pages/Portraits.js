@@ -9,7 +9,7 @@ class Portraits extends React.Component{
     createImage(image){  return <Image source={image}/> }
 
     componentDidMount(){
-        Axios.get("http://res.cloudinary.com/dyeerzayu/image/list/portraits.json")
+        Axios.get("https://res.cloudinary.com/dyeerzayu/image/list/portraits.json")
         .then(response => {
             let responseImages = response.data.resources
             this.setState({

@@ -5,16 +5,17 @@ import  {
   AboutContainer
 } from '../styles/HeaderStyles.js'
 
-const Failure = (props) =>  {
+const Success = (props) =>  {
 
 return (
   <HFContainer>
     <AboutContainer>
-      <FooterItem>Failure</FooterItem>
+      <FooterItem>Success</FooterItem>
     </AboutContainer>
   </HFContainer>
 ) 
 }
 
+  
 
-export default Failure;
+export default Success;

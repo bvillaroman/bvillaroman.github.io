@@ -8,6 +8,7 @@ import  {Container,Background} from '../styles/Container.js'
 import Helmet from 'react-helmet'
 import '../styles/globalStyle.js'
 import './index.css'
+import {Elements, StripeProvider} from 'react-stripe-elements';
 
 const Header = () => (
     <HFContainer>
@@ -19,7 +20,6 @@ const Header = () => (
 )
 
 const TemplateWrapper = ({ children }) => (
-
   <Container>
     <Helmet
       title="BVILLAROMAN"
@@ -27,9 +27,11 @@ const TemplateWrapper = ({ children }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+      >
+      {/* <script src="https://js.stripe.com/v3/"></script> */}
+    </Helmet>
     <Header />
-      {children()}
+          {children()}
   </Container>
 )
 

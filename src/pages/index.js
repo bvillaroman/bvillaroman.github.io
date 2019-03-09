@@ -9,7 +9,7 @@ class IndexPage extends React.Component{
     createImage(image){ return <Image source ={image} /> }
 
     componentDidMount(){
-        Axios.get("http://res.cloudinary.com/dyeerzayu/image/list/home.json")
+        Axios.get("https://res.cloudinary.com/dyeerzayu/image/list/home.json")
         .then(response => {
             let responseImages = response.data.resources
             this.setState({
@@ -32,4 +32,4 @@ class IndexPage extends React.Component{
     }
 };
 
-export default IndexPage
+export default IndexPage;

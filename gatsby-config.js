@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    "gatsby-plugin-stripe",
     {
       resolve: `gatsby-plugin-favicon`,
       options: {

@@ -13,6 +13,8 @@
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
     "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-stripe": "^1.2.0",
+    "gatsby-plugin-stripe-checkout": "^1.1.2",
     "gatsby-plugin-styled-components": "^1.0.5",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
@@ -20,6 +22,7 @@
     "react-helmet": "^5.2.0",
     "react-masonry-component": "^5.0.7",
     "react-medium-image-zoom": "^2.0.6",
+    "react-stripe-elements": "^2.0.3",
     "react-transition-group": "^2.2.1"
   },
   "devDependencies": {

@@ -2,9 +2,9 @@ import React from 'react';
 import ImageZoom from 'react-medium-image-zoom';
 
 const Image = (props) => {
-    const thumbnail = "http://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/c_scale,w_600/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
+    const thumbnail = "https://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/c_scale,w_600/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
 
-    const source = "http://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
+    const source = "https://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
 
     return (
       <ImageZoom

@@ -11,7 +11,7 @@ class Shoots extends React.Component{
     }
 
     componentDidMount(){
-        Axios.get("http://res.cloudinary.com/dyeerzayu/image/list/shoots.json")
+        Axios.get("https://res.cloudinary.com/dyeerzayu/image/list/shoots.json")
         .then(response => {
             let responseImages = response.data.resources
             this.setState({
