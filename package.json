@@ -1,0 +1,31 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "description": "Gatsby hello world starter",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public --branch master"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-stripe": "^1.2.0",
+    "gatsby-plugin-stripe-checkout": "^1.1.2",
+    "gatsby-plugin-styled-components": "^1.0.5",
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-helmet": "^5.2.0",
+    "react-masonry-component": "^5.0.7",
+    "react-medium-image-zoom": "^2.0.6",
+    "react-stripe-elements": "^2.0.3",
+    "react-transition-group": "^2.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
+  }
+}
