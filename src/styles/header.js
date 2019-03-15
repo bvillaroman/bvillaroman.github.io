@@ -8,13 +8,15 @@ export const HFContainer = styled.div`
     maxWidth : 100px;
     padding-bottom: 2px;
     font-weight: bold;
-
+    margin-bottom: 10px;
 `;
 
 export const NavbarLink = styled(Link)`
     color : black;
     text-decoration: none;
     font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     display: inline-block;
     padding : 20px;
     &:active{

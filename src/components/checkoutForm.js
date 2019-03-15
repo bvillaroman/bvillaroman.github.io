@@ -1,7 +1,6 @@
 import React from 'react';
-import { injectStripe, PaymentRequestButtonElement} from 'react-stripe-elements';
-import {Card,SendAmount,CardInputs,FormContainer} from '../styles/component'
-import { graphql, StaticQuery } from "gatsby"
+import { injectStripe} from 'react-stripe-elements';
+import {Card,SendAmount,Email,Date,Amount,FormContainer,FormRow,SentText} from '../styles/components'
 
 class CheckoutForm extends React.Component {
   constructor(props) {
@@ -12,45 +11,65 @@ class CheckoutForm extends React.Component {
       date:'',
       amount:'',
       description:'',
+      disabled: false,
+      paymentSent: false
     }
     this.card = null;
   }
   
+  resetButton() {
+    this.setState({ disabled: false})
+  }
+
+  async submit(ev) {
+    const {date} = this.state
+    const amount = this.state.amount * 100;
+    let {token} = await this.props.stripe.createToken({name: date});
+    let response = await fetch("https://ugi3nmc0e1.execute-api.us-east-1.amazonaws.com/dev/checkout", {
+      method: "POST",
+      headers: new Headers({
+        "Content-Type": "application/json",
+      }),      
+      body: JSON.stringify({
+        token,
+        amount,
+      })
+    })
+    if(response.ok){ 
+      this.resetButton()
+      this.setState({ paymentSent: true })
+    }
+    else {
+      console.error("Error")
+      this.setState({ paymentSent: false })
+    };
+  }
 
   handleInput = (evt) => {
     const { value,name } = evt.target;
-    this.setState({ [name] : value})
-  }
-
-  submit = (ev) => {
-    // User clicked submit
-    const {stripe} = this.props;
-    console.log(stripe)
-    // stripe.createToken().then((payload) => {
-    //   console.log(payload)
-    // })
-    // const paymentRequest = props.stripe.paymentRequest({
-    //   country: 'US',
-    //   currency: 'usd',
-    //   total: {
-    //     label: 'Demo total',
-    //     amount: 1000,
-    //   },
-    // });
+    this.setState({ [name] : value, paymentSent: false})
   }
 
   render() {
+    
     return (
       <div className="checkout">
-        <p>Make a Payment</p>
-        {/* <CardElement /> */}
         <FormContainer>
-          <CardInputs placeholder={'email'} type='text' float={'left'} width='300px' name='email' value={this.state.email} onChange={this.handleInput}/>
-          <CardInputs placeholder={'date'}  type='date' width='150px' name='date' value={this.state.date} onChange={this.handleInput}/>
-          <CardInputs placeholder={'amount'} type='tel' float={'right'} width='100px' name='amount' value={this.state.amount} onChange={this.handleInput}/>
-          <CardInputs placeholder={'description'}  type='text' width='600px' height='70px' name='description' value={this.state.description} onChange={this.handleInput}/>
-          <Card ref={e => {this.card = e}}/>
-          <SendAmount onClick={this.submit}>Send</SendAmount>
+          <FormRow>
+            <Email placeholder={'Email'} type='text' name='email' value={this.state.email} onChange={this.handleInput}/>
+            <Date  placeholder={'Date'}  type='test'  name='date' value={this.state.date} onChange={this.handleInput}/>
+            <Amount placeholder={'Amount'}  name='amount' value={this.state.amount} onChange={this.handleInput}/>
+          </FormRow>
+          <FormRow>
+            <Card ref={e => {this.card = e}}/>
+            <SendAmount onClick={this.submit} disabled={this.state.disabled}>Send</SendAmount>
+          </FormRow>
+          { 
+            this.state.paymentSent && 
+              <FormRow>
+                <SentText>Money Sent!</SentText>
+              </FormRow>
+            }
         </FormContainer>
       </div>
     );

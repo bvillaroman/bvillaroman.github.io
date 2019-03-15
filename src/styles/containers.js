@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 import Masonry from 'react-masonry-component'
+import Layout from "../components/layout"
 
-export const Container = styled.div`
+export const Container = styled(Layout)`
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-weight: 900px;
+    justify-content : 'center';
+    align-tems: 'center'
+`;
+
+export const  AboutContainer = styled.div`
+    text-align: center;
     margin: 0 auto;
     padding-bottom: 10px;
     font-weight: 900px;

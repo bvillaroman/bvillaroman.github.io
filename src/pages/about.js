@@ -1,46 +1,22 @@
 import React from 'react'
-import  {
-  HFContainer,
-  FooterItem,
-  AboutContainer
-} from '../styles/HeaderStyles.js'
-// import {Elements, StripeProvider} from 'react-stripe-elements';
-import {CardElement, injectStripe, Elements, StripeProvider} from 'react-stripe-elements';
+import {Container,AboutContainer} from '../styles/containers.js'
+import CheckoutForm from "../components/checkoutForm"
+import {StripeProvider,Elements} from 'react-stripe-elements';
 
-const About = class extends React.Component {
-  componentDidMount() {
-    this.stripe = window.Stripe("pk_live_B5jY2Ocf9RcwPrpus0JXIKJh", {
-      betas: ["checkout_beta_4"],
-    })
-  }
-
-  async redirectToCheckout(event) {
-    event.preventDefault()
-    const { error } = await this.stripe.redirectToCheckout({
-      items: [{ sku: "sku_EfTeh2Bxd9LFHA", quantity: 1 }],
-      successUrl: window.location.protocol + '//www.bvillaroman.com/success',
-      cancelUrl: window.location.protocol + '//www.bvillaroman.com/canceled',
-    })
-
-    if (error) {
-      console.warn("Error:", error)
-    }
-  }
-
-  render(){
-    return (
-      <HFContainer>
+export default (props) => {
+  return (
+    <StripeProvider apiKey={process.env.STRIPE_API}>
+      <Container>
         <AboutContainer>
-          <FooterItem>ABRAHAM BRUCE VILLAROMAN</FooterItem>
-          <FooterItem>BVILLAROMAN@GMAIL.COM</FooterItem>
-          <FooterItem>631-871-9578</FooterItem>
-          <FooterItem>Payment: </FooterItem>
-          <button onClick={event => this.redirectToCheckout(event)}> send invoice </button>
+          <h3>ABRAHAM BRUCE VILLAROMAN</h3>
+          <h3>BVILLAROMAN@GMAIL.COM</h3>
+          <h3>631-871-9578</h3>
+          <Elements>
+            <CheckoutForm />
+          </Elements>
         </AboutContainer>
-      </HFContainer>
-    ) 
-  }
+      </Container>
+    </StripeProvider>
+  ) 
 }
-  
 
-export default About;

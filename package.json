@@ -1,31 +1,49 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "bvillaroman",
+  "private": true,
+  "description": "bvillaroman photography",
+  "version": "0.1.0",
+  "author": "Abraham Villaroman bvillaroman@gmail.com",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "dotenv": "^6.2.0",
+    "gatsby": "^2.1.27",
+    "gatsby-image": "^2.0.31",
+    "gatsby-plugin-favicon": "^3.1.5",
+    "gatsby-plugin-manifest": "^2.0.22",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.8",
+    "gatsby-plugin-sharp": "^2.0.25",
+    "gatsby-plugin-stripe": "^1.2.0",
+    "gatsby-plugin-stripe-checkout": "^1.1.2",
+    "gatsby-plugin-styled-components": "^3.0.6",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-source-stripe": "^2.1.7",
+    "gatsby-transformer-sharp": "^2.1.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-masonry-component": "^6.2.1",
+    "react-medium-image-zoom": "^3.0.15",
+    "react-stripe-elements": "^2.0.3",
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4"
+  },
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
+    "start": "npm run develop",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public --branch master"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "gatsby": "^1.9.45",
-    "gatsby-link": "^1.6.17",
-    "gatsby-plugin-favicon": "^2.1.1",
-    "gatsby-plugin-stripe": "^1.2.0",
-    "gatsby-plugin-stripe-checkout": "^1.1.2",
-    "gatsby-plugin-styled-components": "^1.0.5",
-    "react": "^16.0.0",
-    "react-bootstrap": "^0.31.3",
-    "react-dom": "^16.0.0",
-    "react-helmet": "^5.2.0",
-    "react-masonry-component": "^5.0.7",
-    "react-medium-image-zoom": "^2.0.6",
-    "react-stripe-elements": "^2.0.3",
-    "react-transition-group": "^2.2.1"
-  },
-  "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }

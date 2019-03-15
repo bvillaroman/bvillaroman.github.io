@@ -1,6 +1,6 @@
 import React from 'react'
-import {masonryOptions,GridContainer} from '../styles/Container.js'
-import Image from '../components/Image.js'
+import {masonryOptions,GridContainer,Container} from '../styles/containers.js'
+import Image from '../components/image.js'
 import Axios from 'axios'
 
 class Portraits extends React.Component{
@@ -20,15 +20,17 @@ class Portraits extends React.Component{
 
     render(){
         return(
-            <GridContainer
-                className={'my-gallery-class'}
-                elementType={'ul'}
-                options={masonryOptions}
-                disableImagesLoaded={false}
-                updateOnEachImageLoad={false}
-            >
-                {this.state.images}
-            </GridContainer>
+            <Container>
+                <GridContainer
+                    className={'my-gallery-class'}
+                    elementType={'ul'}
+                    options={masonryOptions}
+                    disableImagesLoaded={false}
+                    updateOnEachImageLoad={false}
+                >
+                    {this.state.images}
+                </GridContainer>
+            </Container>
         );
     }
 

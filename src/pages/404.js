@@ -1,20 +1,11 @@
-import React from 'react'
-import  {
-  HFContainer,
-  FooterItem,
-  AboutContainer
-} from '../styles/HeaderStyles.js'
+import React from "react"
+import Layout from "../components/layout"
 
-const Failure = (props) =>  {
+const NotFoundPage = () => (
+  <Layout>
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </Layout>
+)
 
-return (
-  <HFContainer>
-    <AboutContainer>
-      <FooterItem>Failure</FooterItem>
-    </AboutContainer>
-  </HFContainer>
-) 
-}
-
-
-export default Failure;
+export default NotFoundPage

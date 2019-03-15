@@ -1,15 +1,13 @@
 import React from 'react'
-import Image from '../components/Image.js'
-import {masonryOptions,GridContainer} from '../styles/Container.js'
+import {masonryOptions,GridContainer,Container} from '../styles/containers.js'
+import Image from '../components/image.js'
 import Axios from 'axios'
 
 class Shoots extends React.Component{
     state = { images: [] }
 
-    createImage(image){
-        return <Image source ={image}/>
-    }
-
+    createImage = (image) => (<Image source ={image}/>)
+    
     componentDidMount(){
         Axios.get("https://res.cloudinary.com/dyeerzayu/image/list/shoots.json")
         .then(response => {
@@ -22,18 +20,20 @@ class Shoots extends React.Component{
 
     render(){
         return(
-            <GridContainer
-                className={'my-gallery-class'}
-                elementType={'ul'}
-                options={masonryOptions}
-                disableImagesLoaded={false}
-                updateOnEachImageLoad={false}
-            >
-                {this.state.images}
-            </GridContainer>
+            <Container>
+                <GridContainer
+                    className={'my-gallery-class'}
+                    elementType={'ul'}
+                    options={masonryOptions}
+                    disableImagesLoaded={false}
+                    updateOnEachImageLoad={false}
+                >
+                    {this.state.images}
+                </GridContainer>
+            </Container>
         );
     }
 
 };
 
-export default Shoots
+export default Shoots;
