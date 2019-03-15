@@ -1,16 +1,6 @@
 import styled from 'styled-components';
 import Link from "gatsby-link"
 
-export const HFContainer = styled.div`
-    text-align : center;
-    position: relative;
-    margin: 0 auto;
-    maxWidth : 100px;
-    padding-bottom: 2px;
-    font-weight: bold;
-    margin-bottom: 10px;
-`;
-
 export const NavbarLink = styled(Link)`
     color : black;
     text-decoration: none;
@@ -44,4 +34,13 @@ export const AboutContainer = styled.div`
     top : 5vh;
     height : 80vh;
     font-weight: bold;
+`;
+export const HFContainer = styled.div`
+    text-align : center;
+    position: relative;
+    margin: 0 auto;
+    maxWidth : 100px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    margin-bottom: 10px;
 `;

@@ -14,6 +14,8 @@ module.exports = {
         async: true,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-stripe`,
       options: {

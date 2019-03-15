@@ -4,6 +4,10 @@ import CheckoutForm from "../components/checkoutForm"
 import {StripeProvider,Elements} from 'react-stripe-elements';
 
 class About extends React.Component{
+  constructor() {
+    super();
+    this.state = {stripe: null};
+  }
 
   componentDidMount() {
     if (window.Stripe) {
@@ -18,7 +22,7 @@ class About extends React.Component{
 
   render() {
     return (
-      <StripeProvider apiKey={process.env.STRIPE_API}>
+      <StripeProvider stripe={this.state.stripe}>
         <Container>
           <AboutContainer>
             <h3>ABRAHAM BRUCE VILLAROMAN</h3>
@@ -30,6 +34,7 @@ class About extends React.Component{
           </AboutContainer>
         </Container>
       </StripeProvider>
+
     ) 
   }
 }
