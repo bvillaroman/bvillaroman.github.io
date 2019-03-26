@@ -26,7 +26,7 @@ class About extends React.Component{
         <Container>
           <AboutContainer>
             <h3>ABRAHAM BRUCE VILLAROMAN</h3>
-            <h3>BVILLAROMAN@GMAIL.COM</h3>
+            <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
             <h3>631-871-9578</h3>
             <Elements>
               <CheckoutForm />
