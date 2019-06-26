@@ -1,9 +1,10 @@
 import React from 'react'
-import {Container,AboutContainer} from '../styles/containers.js'
+import {AboutContainer} from '../styles/containers.js'
+import Layout from "../components/layout"
 import CheckoutForm from "../components/checkoutForm"
 import {StripeProvider,Elements} from 'react-stripe-elements';
 
-class About extends React.Component{
+class Contact extends React.Component{
   constructor() {
     super();
     this.state = {stripe: null};
@@ -23,20 +24,20 @@ class About extends React.Component{
   render() {
     return (
       <StripeProvider stripe={this.state.stripe}>
-        <Container>
+        <Layout>
           <AboutContainer>
             <h3>ABRAHAM BRUCE VILLAROMAN</h3>
             <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
             <h3>631-871-9578</h3>
-            <Elements>
+            {/* <Elements>
               <CheckoutForm />
-            </Elements>
+            </Elements> */}
           </AboutContainer>
-        </Container>
+        </Layout>
       </StripeProvider>
 
     ) 
   }
 }
 
-export default About;
+export default Contact;
