@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
-import Header from "./header"
+import NavBar from "./NavBar"
+import {Container} from "../styles/containers"
 import "./layout.css"
 
 import favicon16 from "../favicon/favicon-16x16.png"
@@ -37,8 +38,10 @@ const Layout = ({ children }) => (
               { rel: 'shortcut icon', type: 'image/png', href: `${favicon96}` },
           ]}>
           </Helmet>
-        <Header />
-        {children}
+        <NavBar />
+        <Container>
+          {children}
+        </Container>
       </>
     )}
   />
