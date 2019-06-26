@@ -1,16 +1,27 @@
 import styled from 'styled-components';
 import Masonry from 'react-masonry-component'
-import Layout from "../components/layout"
 
-export const Container = styled(Layout)`
+export const NavBarContainer = styled.div`
+    width: 80%;
+    height: 14% !important;
+    margin: 0.5rem auto;
+    text-align: center;
+`;
+export const SubNavBarContainer = styled.div`
+    position: relative;
+    border: 1px solid blue;
+`;
+
+export const Container = styled.div`
     margin: 0 auto;
     padding-bottom: 10px;
     font-weight: 900px;
     justify-content : 'center';
-    align-tems: 'center'
+    align-tems: 'center';
+    border: 1px solid orange;
 `;
 
-export const  AboutContainer = styled.div`
+export const AboutContainer = styled.div`
     text-align: center;
     margin: 0 auto;
     padding-bottom: 10px;
@@ -25,8 +36,7 @@ export const GridContainer = styled(Masonry)`
     margin: 0 auto;
     padding-bottom: 10px;
     justify-content : 'center';
-    align-items: 'center'
-
+    align-items: 'center';
 `;
 
 export const masonryOptions = {
