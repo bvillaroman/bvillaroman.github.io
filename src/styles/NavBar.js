@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Link from "gatsby-link"
-import Grid from '@material-ui/core/Grid';
 
 export const NavbarLink = styled(Link)`
     color : black;
@@ -23,19 +22,27 @@ export const Logo = styled(NavbarLink)`
     font-weight: bold;
     &:hover { text-decoration: none; }
     margin: 0 auto;
-
+    padding: 0.5rem 0;
 `;
 
-export const NavBarGrid = styled(Grid)`
-    // text-align: center;
-`;
 
-export const LogoItem = styled(Grid)`
+export const LinksContainer = styled.div`
     padding: 0 !important;
-    text-align: center;
+    width: 285px;
+    display: inline-block;
+    text-align: end;
+    @media(max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
 `;
 
-export const LinksItem = styled(Grid)`
+export const LogoContainer = styled.div`
+    width: 240px;
+    display: inline-block;
     padding: 0 !important;
-    text-align: center;
+    @media(max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
 `;

@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import Masonry from 'react-masonry-component'
 
 export const NavBarContainer = styled.div`
-    width: 100%;
+    width: 80%;
     height: 14% !important;
     margin: 0.5rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
     // text-align: center;
 `;
 export const SubNavBarContainer = styled.div`
@@ -14,10 +18,7 @@ export const SubNavBarContainer = styled.div`
 
 export const Container = styled.div`
     margin: 0 auto;
-    padding-bottom: 10px;
-    font-weight: 900px;
-    justify-content : 'center';
-    align-tems: 'center';
+    width: 80%;
     border: 1px solid orange;
 `;
 
