@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from "gatsby"
 import Helmet from "react-helmet"
 import NavBar from "./NavBar"
 import {Container} from "../styles/containers"
-import "./layout.css"
 
 import favicon16 from "../favicon/favicon-16x16.png"
 import favicon32 from "../favicon/favicon-32x32.png"

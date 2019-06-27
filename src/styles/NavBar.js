@@ -8,28 +8,34 @@ export const NavbarLink = styled(Link)`
     font-size: 0.85rem;
     display: inline-block;
     font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
-    &:active{
-      text-decoration: underline;
-      text-decoration-color:#FF9800;
-      }
-    &:hover{
+    &:hover {
       text-decoration: underline;
       text-decoration-color: #FF9800;
     }
-    font-weight: 450;
+    font-weight: 350;
     padding: 0.5rem;
+    // margin: 0 5%;
 `;
 
 export const Logo = styled(NavbarLink)`
     color: #FF9800;
     font-size: 2rem;
     font-weight: bold;
+    &:hover { text-decoration: none; }
+    margin: 0 auto;
+
 `;
 
 export const NavBarGrid = styled(Grid)`
+    // text-align: center;
+`;
+
+export const LogoItem = styled(Grid)`
+    padding: 0 !important;
     text-align: center;
 `;
 
-export const NavbarItem = styled(Grid)`
+export const LinksItem = styled(Grid)`
     padding: 0 !important;
+    text-align: center;
 `;

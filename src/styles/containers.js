@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import Masonry from 'react-masonry-component'
 
 export const NavBarContainer = styled.div`
-    width: 80%;
+    width: 100%;
     height: 14% !important;
     margin: 0.5rem auto;
-    text-align: center;
+    // text-align: center;
 `;
 export const SubNavBarContainer = styled.div`
     position: relative;
