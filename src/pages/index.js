@@ -1,8 +1,7 @@
 import React from "react"
-import {masonryOptions,GridContainer} from '../styles/containers.js'
 import Layout from "../components/layout"
-import Image from '../components/image.js'
-import Axios from 'axios'
+import {LandingContainer} from "../styles/containers"
+import {HeaderHighlight} from "../styles/components"
 
 class IndexPage extends React.Component{
 
@@ -11,15 +10,14 @@ class IndexPage extends React.Component{
     render(){
         return(
             <Layout>
-                {/* <GridContainer
-                elementType={'ul'}
-                options={masonryOptions}
-                disableImagesLoaded={false}
-                updateOnEachImageLoad={false}
-                >
-                    {this.state.images}
-                </GridContainer> */}
-                Home page someting nice
+                <LandingContainer>
+                    <h1>Designer, Developer & Friend.</h1>
+                    <h3>I design and code beautiful web applications.</h3>
+
+                    <br/>
+                    <h2>Have a business, idea or project in mind?</h2>
+                    <h2>Let's have a <HeaderHighlight to="/contact">conversation</HeaderHighlight>.</h2>
+                </LandingContainer>
             </Layout>
         );
     }

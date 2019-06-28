@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 import {CardElement} from 'react-stripe-elements';
+import Link from "gatsby-link"
+
+// LANDING PAGE COMPONENTS
+
+export const HeaderHighlight = styled(Link)`
+  font-size: 2rem;
+  font-weight: 350;
+  color: #FF9800;
+  text-decoration: none;
+`;
 
 export const MyInput = styled.input`
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;  
