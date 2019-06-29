@@ -2,6 +2,7 @@ import React from 'react'
 import {AboutContainer} from '../styles/containers.js'
 import Layout from "../components/layout"
 import CheckoutForm from "../components/checkoutForm"
+import SubNavBar from "../components/SubNavBar"
 import {StripeProvider,Elements} from 'react-stripe-elements';
 
 class Contact extends React.Component{
@@ -25,6 +26,7 @@ class Contact extends React.Component{
     return (
       <StripeProvider stripe={this.state.stripe}>
         <Layout>
+          <SubNavBar />
           <AboutContainer>
             <h3>ABRAHAM BRUCE VILLAROMAN</h3>
             <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
