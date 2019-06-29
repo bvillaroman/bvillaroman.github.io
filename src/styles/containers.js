@@ -25,6 +25,21 @@ export const LandingContainer = styled.div`
         font-weight: 300;
         color: rgba(0,0,0,0.55)
     };
+    margin: 10% auto;
+    @media(max-width: 768px) {
+        h1 {
+            font-size: 1.5rem;
+        };
+        h2 {
+            font-size: 1.0rem;
+            font-weight: 350;
+        };
+        h3 {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: rgba(0,0,0,0.55)
+        };
+    }
 `;
 
 export const SubNavBarContainer = styled.div`

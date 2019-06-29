@@ -9,6 +9,14 @@ export const HeaderHighlight = styled(Link)`
   font-weight: 350;
   color: #FF9800;
   text-decoration: none;
+  @media(max-width: 768px) {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  @media(max-width: 582px) {
+    font-size: 1.0rem;
+    font-weight: 300;
+  }
 `;
 
 export const MyInput = styled.input`
