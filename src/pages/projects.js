@@ -1,6 +1,6 @@
 import React from "react"
 import {ProjectsContainer} from '../styles/containers.js'
-import {TitleContainer} from '../styles/components.js'
+import {TitleContainer, InfoContainer, DetailsContainer, ThumbnailContainer, Divider} from '../styles/components.js'
 import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
 class ProjectsPage extends React.Component{
@@ -23,7 +23,7 @@ class ProjectsPage extends React.Component{
 
 
   render(){
-    const {title, details, tbumbnail,  currentTab} = this.state;
+    const {title, details, thumbnail,  currentTab} = this.state;
 
     const labels = ["Airbnb Price Estimator", "Universal Design Compass"]
 
@@ -31,9 +31,32 @@ class ProjectsPage extends React.Component{
       <Layout>
           <SubNavBar currentTab={currentTab} switchSections={this.switchSections} labels={labels}/>
           <ProjectsContainer>
+          <InfoContainer>
             <TitleContainer>
-              {title}
+              <h1>{title}</h1>
+              <Divider/>
             </TitleContainer>
+            <DetailsContainer>
+              <p>An Airbnb price predictor/suggester of potential/existing Airbnb listings according to:</p>
+              <ul>
+                  <li>Listing Details </li>
+                  <li>Location</li>
+                  <li>Seasonality </li> 
+                  <li>Competing prices </li>
+                  <li>Guest and Host reputation</li>
+              </ul>
+              <p>Technology Used:</p>
+              <ul>
+                <li>React JS with GatsbyJS</li>
+                <li>AWS Lambda, AWS S3, AWS SageMaker</li>
+                <li>NodeJS and MongoDB</li>
+                <li>Python3 with Tensor Flow and Pandas </li>
+              </ul>
+            </DetailsContainer>
+          </InfoContainer>
+          <ThumbnailContainer>
+            {thumbnail}
+          </ThumbnailContainer>
           </ProjectsContainer>
       </Layout>
     );

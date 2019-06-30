@@ -133,9 +133,42 @@ export const SentText = styled.div`
 
 // PROJECTS PAGE COMPONENTS
 
-export const TitleContainer = styled.h1`
+export const TitleContainer = styled.div`
     width: 100%;
+    h1 {
+      color: #000000;
+      font-weight: 450;
+    }
+    p {
+
+    }
+`;
+
+export const Divider = styled.div`
+  width: 40%;
+  border: 0.7px solid rgb(255, 152, 0);
+`;
+
+export const DetailsContainer = styled.div`
+    width: 100%;
+    margin: 10% auto;
+    font-size: 0.8rem;
     font-weight: 350;
+`;
+
+export const ThumbnailContainer = styled.div`
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    // background: red;
+`;
+
+export const InfoContainer = styled.div`
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    
+    // background: blue;
 `;
 
 
