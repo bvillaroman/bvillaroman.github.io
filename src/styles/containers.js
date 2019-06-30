@@ -42,11 +42,6 @@ export const LandingContainer = styled.div`
     }
 `;
 
-export const SubNavBarContainer = styled.div`
-    position: relative;
-    border: 1px solid blue;
-`;
-
 export const Container = styled.div`
     margin: 0 auto;
     width: 80%;

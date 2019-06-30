@@ -6,10 +6,10 @@ import SubNavBar from "../components/SubNavBar"
 import {StripeProvider,Elements} from 'react-stripe-elements';
 
 class Contact extends React.Component{
-  constructor() {
-    super();
-    this.state = {stripe: null};
-  }
+  state = {
+    stripe: null,
+    currentTab: 0,
+  };
 
   componentDidMount() {
     if (window.Stripe) {
@@ -22,19 +22,33 @@ class Contact extends React.Component{
     }
   }
 
+  switchSections = (currentTab) => { this.setState({currentTab}) }
+
   render() {
+    const labels = ["Contact Information", "Invoice"];
+
     return (
       <StripeProvider stripe={this.state.stripe}>
         <Layout>
-          <SubNavBar />
-          <AboutContainer>
-            <h3>ABRAHAM BRUCE VILLAROMAN</h3>
-            <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
-            <h3>631-871-9578</h3>
-            {/* <Elements>
-              <CheckoutForm />
-            </Elements> */}
-          </AboutContainer>
+          <SubNavBar currentTab={this.state.currentTab} switchSections={this.switchSections} labels={labels}/>
+            { 
+              this.state.currentTab == 0 && (
+              <AboutContainer>
+                <h3>ABRAHAM BRUCE VILLAROMAN</h3>
+                <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
+                <h3>631-871-9578</h3>
+              </AboutContainer>
+              )
+            }
+            { 
+              this.state.currentTab == 1 && (
+              <AboutContainer>
+                <h3>ABRAHAM BRUCE VILLAROMAN</h3>
+                <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
+                <h3>631-871-9578</h3>
+              </AboutContainer>
+              )
+            }
         </Layout>
       </StripeProvider>
 
