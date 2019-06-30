@@ -13,8 +13,15 @@ export const HeaderHighlight = styled(Link)`
     font-size: 1.2rem;
     font-weight: 300;
   }
-  @media(max-width: 582px) {
-    font-size: 1.0rem;
+`;
+
+export const EmailHighlight = styled.span`
+  font-size: 3rem;
+  font-weight: 350;
+  color: #FF9800;
+  text-decoration: none;
+  @media(max-width: 768px) {
+    font-size: 2rem;
     font-weight: 300;
   }
 `;

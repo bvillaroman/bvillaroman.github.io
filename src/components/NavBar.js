@@ -6,14 +6,18 @@ export default () => {
   return (
     <NavBarContainer>
       <LogoContainer>
-        <Logo to = "/">BVILLAROMAN</Logo>
+        <Logo 
+          to = "/" 
+          activeStyle={{ 
+            color: "#FF9800" 
+          }}
+        >BVILLAROMAN</Logo>
       </LogoContainer>
       <LinksContainer>
         <NavbarLink 
           to="/photography"  
           activeStyle={{ 
-            textDecoration: "underline",
-            textDecorationColor: "#FF9800" 
+            color: "#FF9800" 
           }}
         >
             PHOTOGRAPHY
@@ -21,8 +25,7 @@ export default () => {
         <NavbarLink 
           to="/projects"  
           activeStyle={{ 
-            textDecoration: "underline",
-            textDecorationColor: "#FF9800" 
+            color: "#FF9800" 
           }}
         >
             PROJECTS
@@ -30,8 +33,7 @@ export default () => {
         <NavbarLink 
           to="/contact"  
           activeStyle={{ 
-            textDecoration: "underline",
-            textDecorationColor: "#FF9800" 
+            color: "#FF9800" 
           }}
         >
             CONTACT

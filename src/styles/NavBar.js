@@ -4,12 +4,11 @@ import Link from "gatsby-link"
 export const NavbarLink = styled(Link)`
     color : black;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1rem;
     display: inline-block;
     font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: #FF9800;
+      color: #FF9800;
     }
     font-weight: 350;
     padding: 0.5rem;
@@ -17,7 +16,7 @@ export const NavbarLink = styled(Link)`
 `;
 
 export const Logo = styled(NavbarLink)`
-    color: #FF9800;
+    color: black;
     font-size: 2rem;
     font-weight: bold;
     &:hover { text-decoration: none; }
@@ -28,7 +27,7 @@ export const Logo = styled(NavbarLink)`
 
 export const LinksContainer = styled.div`
     padding: 0 !important;
-    width: 285px;
+    width: 350px;
     display: inline-block;
     text-align: end;
     @media(max-width: 768px) {

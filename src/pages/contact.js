@@ -1,5 +1,6 @@
 import React from 'react'
-import {AboutContainer} from '../styles/containers.js'
+import {ContactContainer} from '../styles/containers.js'
+import {EmailHighlight} from '../styles/components'
 import Layout from "../components/layout"
 import CheckoutForm from "../components/checkoutForm"
 import SubNavBar from "../components/SubNavBar"
@@ -33,20 +34,17 @@ class Contact extends React.Component{
           <SubNavBar currentTab={this.state.currentTab} switchSections={this.switchSections} labels={labels}/>
             { 
               this.state.currentTab == 0 && (
-              <AboutContainer>
-                <h3>ABRAHAM BRUCE VILLAROMAN</h3>
-                <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
-                <h3>631-871-9578</h3>
-              </AboutContainer>
+              <ContactContainer>
+                <h1>Have a business, idea or project in mind? <EmailHighlight >Email Me.</EmailHighlight></h1>
+                <br/>
+              </ContactContainer>
               )
             }
             { 
               this.state.currentTab == 1 && (
-              <AboutContainer>
-                <h3>ABRAHAM BRUCE VILLAROMAN</h3>
-                <h3>BVILLAROMANBUSINESS@GMAIL.COM</h3>
-                <h3>631-871-9578</h3>
-              </AboutContainer>
+              <ContactContainer>
+                <h3>Stripe</h3>
+              </ContactContainer>
               )
             }
         </Layout>

@@ -28,14 +28,14 @@ export const LandingContainer = styled.div`
     margin: 10% auto;
     @media(max-width: 768px) {
         h1 {
-            font-size: 1.5rem;
+            font-size: 2.0rem;
         };
         h2 {
-            font-size: 1.0rem;
+            font-size: 1.3rem;
             font-weight: 350;
         };
         h3 {
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             font-weight: 300;
             color: rgba(0,0,0,0.55)
         };
@@ -45,17 +45,11 @@ export const LandingContainer = styled.div`
 export const Container = styled.div`
     margin: 0 auto;
     width: 80%;
-    border: 1px solid orange;
+    // border: 1px solid orange;
     font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
 `;
 
-export const AboutContainer = styled.div`
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    font-weight: 900px;
-    justify-content : 'center';
-    align-tems: 'center'
+export const ContactContainer = styled(LandingContainer)`   
 `;
 
 export const GridContainer = styled(Masonry)`
