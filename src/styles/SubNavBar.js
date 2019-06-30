@@ -6,7 +6,7 @@ import {  withStyles } from '@material-ui/core/styles';
 
 // Sub Nav Bar Container
 
-export const NavBar = withStyles({
+export const NavBarJS = withStyles({
   indicator: {
     display: 'flex',
     '& > div': {
@@ -15,6 +15,13 @@ export const NavBar = withStyles({
     },
   },
 })(props => <Tabs {...props} TabIndicatorProps={{ children: <div /> }} />);
+
+export const NavBar = styled(NavBarJS)`
+  && {
+   width: 80%;
+   margin: 0 auto;
+  }
+`;
 
 export const Item = styled(Tab)`
   && {

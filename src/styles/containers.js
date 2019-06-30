@@ -13,6 +13,7 @@ export const NavBarContainer = styled.div`
 `;
 
 export const LandingContainer = styled.div`   
+    width: 80%;
     h1 {
         font-size: 3rem;
     };
@@ -44,12 +45,16 @@ export const LandingContainer = styled.div`
 
 export const Container = styled.div`
     margin: 0 auto;
-    width: 80%;
+    // width: 80%;
     // border: 1px solid orange;
     font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
 `;
 
 export const ContactContainer = styled(LandingContainer)`   
+`;
+
+export const PhotographyContainer = styled(Container)`
+    width: 100%;
 `;
 
 export const GridContainer = styled(Masonry)`

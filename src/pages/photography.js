@@ -1,39 +1,67 @@
 import React from "react"
-import {masonryOptions,GridContainer} from '../styles/containers.js'
+import {masonryOptions,GridContainer,PhotographyContainer} from '../styles/containers.js'
+import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
 import Image from '../components/image.js'
 import Axios from 'axios'
 
 class PhotographyPage extends React.Component{
     state = { 
-      section : "",
-      images : []
+      home : [],
+      portraits : [],
+      shoots: [],
+      currentTab: 0,
     }
+
+    switchSections = (currentTab) => { this.setState({currentTab}) }
     
     componentDidMount(){
 
-      const section = this.state.section === "" ? "home" : this.state.section;
-
-      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/${section}.json`)
+      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/home.json`)
           .then(response => {
               let responseImages = response.data.resources
-              this.setState({ images: responseImages.map((img) => (<Image source={img}/>))
+              this.setState({ home: responseImages.map((img,key) => (<Image key={key} source={img}/>))
+          })
+      });
+
+      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/portraits.json`)
+          .then(response => {
+              let responseImages = response.data.resources
+              this.setState({ portraits: responseImages.map((img,key) => (<Image key={key} source={img}/>))
+          })
+      });
+
+      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/shoots.json`)
+          .then(response => {
+              let responseImages = response.data.resources
+              this.setState({ shoots: responseImages.map((img,key) => (<Image key={key} source={img}/>))
           })
       });
     }
     render(){
-        return(
-          <Layout>
+      const {portraits, shoots, home, currentTab} = this.state;
+      const images = currentTab === 0 ? home
+                  :  currentTab === 1 ? portraits
+                  :  currentTab === 2 ? shoots
+                  :  home;
+
+      const labels = ["Home", "Portraits", "Shoots"]
+
+      return(
+        <Layout>
+            <SubNavBar currentTab={currentTab} switchSections={this.switchSections} labels={labels}/>
+            <PhotographyContainer>
               <GridContainer
                 elementType={'ul'}
                 options={masonryOptions}
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
                 >
-                  {this.state.images}
+                  {images}
               </GridContainer>
-          </Layout>
-        );
+            </PhotographyContainer>
+        </Layout>
+      );
     }
 };
 
