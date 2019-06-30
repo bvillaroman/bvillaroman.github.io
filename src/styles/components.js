@@ -1,6 +1,11 @@
+import React from 'react';
 import styled from 'styled-components';
 import {CardElement} from 'react-stripe-elements';
 import Link from "gatsby-link"
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import {  withStyles } from '@material-ui/core/styles';
+import Masonry from 'react-masonry-component'
 
 // LANDING PAGE COMPONENTS
 
@@ -15,6 +20,8 @@ export const HeaderHighlight = styled(Link)`
   }
 `;
 
+// CONTACT PAGE COMPONENTS
+
 export const EmailHighlight = styled.span`
   font-size: 3rem;
   font-weight: 350;
@@ -25,7 +32,6 @@ export const EmailHighlight = styled.span`
     font-weight: 300;
   }
 `;
-
 
 export const MyInput = styled.input`
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;  
@@ -56,13 +62,13 @@ export const Card = styled(CardElement)`
   margin 10px auto;
 `
 export const Email = styled(MyInput)`
-width: 40%;
+  width: 40%;
 `
 export const Date = styled(MyInput)`
-width: 15%;
+  width: 15%;
 `
 export const Amount = styled(MyInput)`
-width: 12%;
+  width: 12%;
 `
 export const SendAmount = styled.button`
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;  
@@ -124,3 +130,116 @@ export const SentText = styled.div`
   float: right;
 
 `
+
+// PROJECTS PAGE COMPONENTS
+
+export const TitleContainer = styled.h1`
+    width: 100%;
+    font-weight: 350;
+`;
+
+
+// PHOTOGRAPHY PAGE COMPONENTS
+
+export const GridContainer = styled(Masonry)`
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    justify-content : 'center';
+    align-items: 'center';
+`;
+
+export const masonryOptions = {
+    transitionDuration:'0.8s',
+    isFitWidth : true
+};
+
+// NAV BAR
+
+export const NavBarContainer = styled.div`
+    width: 80%;
+    height: 14% !important;
+    margin: 0.5rem auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    // text-align: center;
+`;
+
+
+export const NavbarLink = styled(Link)`
+    color : black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
+    &:hover {
+      color: #FF9800;
+    }
+    font-weight: 350;
+    padding: 0.5rem;
+    // margin: 0 5%;
+`;
+
+export const Logo = styled(NavbarLink)`
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    &:hover { text-decoration: none; }
+    margin: 0 auto;
+    padding: 0.5rem 0;
+`;
+
+
+export const LinksContainer = styled.div`
+    padding: 0 !important;
+    width: 350px;
+    display: inline-block;
+    text-align: end;
+    @media(max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+`;
+
+export const LogoContainer = styled.div`
+    width: 240px;
+    display: inline-block;
+    padding: 0 !important;
+    @media(max-width: 768px) {
+      width: 100%;
+      text-align: center;
+    }
+`;
+
+// Sub Nav Bar 
+
+export const NavBarJS = withStyles({
+  indicator: {
+    display: 'flex',
+    '& > div': {
+      width: '100%',
+      backgroundColor: '#FF9800',
+    },
+  },
+})(props => <Tabs {...props} TabIndicatorProps={{ children: <div /> }} />);
+
+export const NavBar = styled(NavBarJS)`
+  && {
+   width: 80%;
+   margin: 0 auto;
+  }
+`;
+
+export const Item = styled(Tab)`
+  && {
+    opacity: 1;
+    margin: 0 auto;
+    text-decoration: none;
+    text-transform: none;
+  }
+`;
+
+

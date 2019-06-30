@@ -1,5 +1,5 @@
 import React from 'react'
-import  { NavBar, Item } from '../styles/SubNavBar.js'
+import  { NavBar, Item } from '../styles/components'
 
 export default ({currentTab, labels, switchSections}) => {
   return (

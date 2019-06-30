@@ -1,6 +1,5 @@
 import React from 'react'
-import  { NavbarLink, Logo, LinksContainer, LogoContainer } from '../styles/NavBar.js'
-import { NavBarContainer } from '../styles/containers'
+import  { NavbarLink, Logo, LinksContainer, LogoContainer, NavBarContainer } from '../styles/components'
 
 export default () => {
   return (

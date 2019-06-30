@@ -1,5 +1,6 @@
 import React from "react"
-import {masonryOptions,GridContainer,PhotographyContainer} from '../styles/containers.js'
+import {PhotographyContainer} from '../styles/containers.js'
+import {masonryOptions,GridContainer,} from "../styles/components"
 import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
 import Image from '../components/image.js'

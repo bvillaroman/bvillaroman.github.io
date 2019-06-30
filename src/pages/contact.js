@@ -33,7 +33,7 @@ class Contact extends React.Component{
         <Layout>
           <SubNavBar currentTab={this.state.currentTab} switchSections={this.switchSections} labels={labels}/>
             { 
-              this.state.currentTab == 0 && (
+              this.state.currentTab === 0 && (
               <ContactContainer>
                 <h1>Have a business, idea or project in mind? <EmailHighlight >Email Me.</EmailHighlight></h1>
                 <br/>
@@ -41,7 +41,7 @@ class Contact extends React.Component{
               )
             }
             { 
-              this.state.currentTab == 1 && (
+              this.state.currentTab === 1 && (
               <ContactContainer>
                 <h3>Stripe</h3>
               </ContactContainer>
