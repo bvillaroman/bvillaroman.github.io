@@ -26,7 +26,7 @@ class Contact extends React.Component{
   switchSections = (currentTab) => { this.setState({currentTab}) }
 
   render() {
-    const labels = ["Contact Information", "Invoice"];
+    const labels = ["Contact Info", "Invoice"];
 
     return (
       <StripeProvider stripe={this.state.stripe}>
@@ -35,7 +35,7 @@ class Contact extends React.Component{
             { 
               this.state.currentTab === 0 && (
               <ContactContainer>
-                <h1>Have a business, idea or project in mind? <EmailHighlight >Email Me.</EmailHighlight></h1>
+                <h1>Work inquiry, question, or something else? <EmailHighlight >Email Me.</EmailHighlight></h1>
                 <br/>
               </ContactContainer>
               )

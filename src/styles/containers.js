@@ -39,10 +39,12 @@ export const Container = styled.div`
 `;
 
 export const ContactContainer = styled(LandingContainer)`   
+    margin: 5% auto;
 `;
 
 export const PhotographyContainer = styled(Container)`
 `;
 
 export const ProjectsContainer = styled(Container)`
+    width: 80%;
 `;
