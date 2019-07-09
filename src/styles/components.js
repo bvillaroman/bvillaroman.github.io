@@ -176,11 +176,11 @@ export const InfoContainer = styled.div`
 
 export const GridContainer = styled(Masonry)`
     position: relative;
+    padding-left: 0;
     display: table;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 10px;
-    justify-content : 'center';
-    align-items: 'center';
+    align: 'center';
 `;
 
 export const masonryOptions = {

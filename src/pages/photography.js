@@ -57,8 +57,8 @@ class PhotographyPage extends React.Component{
                 options={masonryOptions}
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
-                >
-                  {images}
+              >
+                {images}
               </GridContainer>
             </PhotographyContainer>
         </Layout>

@@ -43,6 +43,8 @@ export const ContactContainer = styled(LandingContainer)`
 `;
 
 export const PhotographyContainer = styled(Container)`
+    // width: 80%;
+    margin: 0 auto;
 `;
 
 export const ProjectsContainer = styled(Container)`
