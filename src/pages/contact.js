@@ -44,6 +44,9 @@ class Contact extends React.Component{
               this.state.currentTab === 1 && (
               <ContactContainer>
                 <h3>Stripe</h3>
+                <Elements>
+                  <CheckoutForm/>
+                </Elements>
               </ContactContainer>
               )
             }
