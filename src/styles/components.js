@@ -6,6 +6,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import {  withStyles } from '@material-ui/core/styles';
 import Masonry from 'react-masonry-component'
+import ImageZoom from 'react-medium-image-zoom';
+
 
 // LANDING PAGE COMPONENTS
 
@@ -133,44 +135,60 @@ export const SentText = styled.div`
 
 // PROJECTS PAGE COMPONENTS
 
-export const TitleContainer = styled.div`
-    width: 100%;
-    h1 {
-      color: #000000;
-      font-weight: 450;
+export const InfoContainer = styled.div`
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+    @media(max-width: 768px) {
+      width: 100%;
+      margin: 2% auto;
+      text-align: center;
     }
-    p {
+    // background: blue;
+`;
+export const ThumbnailContainer = styled.div`
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: 100%;
+    }
+    text-align: center;
+    margin: 0;
 
+    @media(max-width: 768px) {
+      width: 100%;
+      margin-top: 15%;
     }
+  }
+`;
+
+export const TitleContainer = styled.h1`
+    width: 100%;
+    color: #000000;
+    font-weight: 450;
+    margin: 0 auto 1.5rem auto;
+
 `;
 
 export const Divider = styled.div`
   width: 40%;
   border: 0.7px solid rgb(255, 152, 0);
+  @media(max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const DetailsContainer = styled.div`
     width: 100%;
-    margin: 10% auto;
+    margin-top: 1.5rem;
     font-size: 0.8rem;
     font-weight: 350;
+    @media(max-width: 768px) {
+      text-align: start;
+    }
 `;
-
-export const ThumbnailContainer = styled.div`
-    width: 60%;
-    height: 100%;
-    display: inline-block;
-    // background: red;
-`;
-
-export const InfoContainer = styled.div`
-    width: 40%;
-    height: 100%;
-    display: inline-block;
-    
-    // background: blue;
-`;
-
 
 // PHOTOGRAPHY PAGE COMPONENTS
 
@@ -274,5 +292,15 @@ export const Item = styled(Tab)`
     text-transform: none;
   }
 `;
+
+
+// Images
+
+export const ImageItem = styled(ImageZoom)`
+  && {
+    width: 350px!important;
+  }
+`;
+
 
 

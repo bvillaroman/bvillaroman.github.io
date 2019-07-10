@@ -3,6 +3,7 @@ import {ProjectsContainer} from '../styles/containers.js'
 import {TitleContainer, InfoContainer, DetailsContainer, ThumbnailContainer, Divider} from '../styles/components.js'
 import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
+
 class ProjectsPage extends React.Component{
   state = { 
     title : "",
@@ -33,9 +34,10 @@ class ProjectsPage extends React.Component{
           <ProjectsContainer>
           <InfoContainer>
             <TitleContainer>
-              <h1>{title}</h1>
-              <Divider/>
+              {title}
+              
             </TitleContainer>
+            <Divider/>
             <DetailsContainer>
               <p>An Airbnb price predictor/suggester of potential/existing Airbnb listings according to:</p>
               <ul>
@@ -55,7 +57,7 @@ class ProjectsPage extends React.Component{
             </DetailsContainer>
           </InfoContainer>
           <ThumbnailContainer>
-            {thumbnail}
+            <img src="https://res.cloudinary.com/dyeerzayu/image/upload/c_scale,q_100,w_1000/v1562693389/Airbnb%20Thumbnail.png"/>
           </ThumbnailContainer>
           </ProjectsContainer>
       </Layout>

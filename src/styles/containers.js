@@ -50,4 +50,9 @@ export const PhotographyContainer = styled(Container)`
 export const ProjectsContainer = styled(Container)`
     width: 80%;
     margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+    @media(max-width: 768px) {
+        display: block;
+    }
 `;
