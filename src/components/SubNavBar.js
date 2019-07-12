@@ -6,7 +6,7 @@ export default ({currentTab, labels, switchSections}) => {
     <NavBar 
       centered 
       value={currentTab}
-      // variant="fullWidth"
+      variant="fullWidth"
     >
       {
         labels.map((label,key) => {
