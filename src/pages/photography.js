@@ -5,6 +5,7 @@ import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
 import Image from '../components/image.js'
 import Axios from 'axios'
+import { graphql } from 'gatsby'
 
 class PhotographyPage extends React.Component{
     state = { 
@@ -18,26 +19,14 @@ class PhotographyPage extends React.Component{
     
     componentDidMount(){
 
-      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/home.json`)
-          .then(response => {
-              let responseImages = response.data.resources
-              this.setState({ home: responseImages.map((img,key) => (<Image key={key} source={img}/>))
-          })
-      });
+      const photos = this.props.data.bvillaroman.photos;
 
-      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/portraits.json`)
-          .then(response => {
-              let responseImages = response.data.resources
-              this.setState({ portraits: responseImages.map((img,key) => (<Image key={key} source={img}/>))
-          })
-      });
+      const home      = photos.map((img,key) => { if(img.category === "home") return (<Image key={key} source={img}/>)})
+      const portraits = photos.map((img,key) => { if(img.category === "portraits") return (<Image key={key} source={img}/>)})
+      const shoots    = photos.map((img,key) => { if(img.category === "shoots") return (<Image key={key} source={img}/>)})
 
-      Axios.get(`https://res.cloudinary.com/dyeerzayu/image/list/shoots.json`)
-          .then(response => {
-              let responseImages = response.data.resources
-              this.setState({ shoots: responseImages.map((img,key) => (<Image key={key} source={img}/>))
-          })
-      });
+      this.setState({ home,portraits,shoots })
+
     }
     render(){
       const {portraits, shoots, home, currentTab} = this.state;
@@ -65,5 +54,22 @@ class PhotographyPage extends React.Component{
       );
     }
 };
+
+export const query = graphql`
+  query Photos {
+    bvillaroman {
+      photos {
+        category
+        created_at
+        format
+        height
+        public_id
+        width
+        version
+        type
+      }
+    }
+  }
+`
 
 export default PhotographyPage;

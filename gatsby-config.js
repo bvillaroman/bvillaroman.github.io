@@ -9,6 +9,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // This type will contain remote schema Query type
+        typeName: "BVILLAROMAN",
+        // This is the field under which it's accessible
+        fieldName: "bvillaroman",
+        // URL to query from
+        url: "https://bvillaroman.herokuapp.com/v1/graphql",
+      },
+    },
+    {
       resolve: `gatsby-plugin-stripe`,
       options: {
         async: true,
