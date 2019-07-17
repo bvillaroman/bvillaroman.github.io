@@ -4,7 +4,6 @@ import {masonryOptions,GridContainer,} from "../styles/components"
 import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
 import Image from '../components/image.js'
-import Axios from 'axios'
 import { graphql } from 'gatsby'
 
 class PhotographyPage extends React.Component{

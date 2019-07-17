@@ -7,32 +7,31 @@ import { graphql } from 'gatsby'
 
 class ProjectsPage extends React.Component{
   state = { 
-    title : "",
-    details : "",
-    thumbnail: "",
+    projects : [],
     currentTab: 0,
   }
 
   switchSections = (currentTab) => { this.setState({currentTab}) }
   
   componentDidMount(){
-
+    const projects = this.props.data.bvillaroman.project;
+    console.log(projects)
   }
 
 
   render(){
-    const {title, details, thumbnail,  currentTab} = this.state;
+    const {currentTab} = this.state;
 
     const labels = ["Airbnb Price Estimator", "Universal Design Compass"]
 
-    console.log(this.props);
+    // console.log(this.props);
     return(
       <Layout>
           <SubNavBar currentTab={currentTab} switchSections={this.switchSections} labels={labels}/>
           <ProjectsContainer>
           <InfoContainer>
             <TitleContainer>
-              {title}
+              
               
             </TitleContainer>
             <Divider/>
@@ -40,8 +39,11 @@ class ProjectsPage extends React.Component{
               
             </DetailsContainer>
           </InfoContainer>
+
           <ThumbnailContainer>
+
           </ThumbnailContainer>
+
           </ProjectsContainer>
       </Layout>
     );
@@ -53,9 +55,13 @@ export const query = graphql`
     bvillaroman {
       project {
         details
+        title
         id
         photos
         sub_headers
+        year
+        link
+        summary
       }
     }
   }
