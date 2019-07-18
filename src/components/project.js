@@ -1,24 +1,23 @@
 import React from "react"
 import {TitleContainer, InfoContainer, DetailsContainer, ThumbnailContainer, Divider} from '../styles/components.js'
 
-const Project = ({ details, title, id, photos, sub_headers, year, link, summary}) => {
-    // console.log(this.props);
+const Project = ({ project : {details, title, id, photos, sub_headers, year, link, summary }}) => {
   return(
-    <div>
+    <React.Fragment>
       <InfoContainer>
         <TitleContainer>
           {title}     
         </TitleContainer>
         <Divider/>
         <DetailsContainer>
-          summary
+          {year}
         </DetailsContainer>
       </InfoContainer>
       
       <ThumbnailContainer>
 
       </ThumbnailContainer>
-    </div>
+    </React.Fragment>
   );
 }
 

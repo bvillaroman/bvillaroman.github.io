@@ -1,8 +1,8 @@
 import React from "react"
 import {ProjectsContainer} from '../styles/containers.js'
-import {TitleContainer, InfoContainer, DetailsContainer, ThumbnailContainer, Divider} from '../styles/components.js'
 import SubNavBar from "../components/SubNavBar"
 import Layout from "../components/layout"
+import Project from "../components/project"
 import { graphql } from 'gatsby'
 
 class ProjectsPage extends React.Component{
@@ -14,36 +14,27 @@ class ProjectsPage extends React.Component{
   switchSections = (currentTab) => { this.setState({currentTab}) }
   
   componentDidMount(){
-    const projects = this.props.data.bvillaroman.project;
-    console.log(projects)
+    const projects = this.props.data.bvillaroman.project.map((project) => {
+      return (
+        <Project project={project} />
+      )
+    });
+
+    this.setState({ projects })
   }
 
 
   render(){
-    const {currentTab} = this.state;
+    const {currentTab, projects} = this.state;
 
-    const labels = ["Airbnb Price Estimator", "Universal Design Compass"]
+    const labels = this.props.data.bvillaroman.project.map((project) => (project.title))
 
     // console.log(this.props);
     return(
       <Layout>
           <SubNavBar currentTab={currentTab} switchSections={this.switchSections} labels={labels}/>
           <ProjectsContainer>
-          <InfoContainer>
-            <TitleContainer>
-              
-              
-            </TitleContainer>
-            <Divider/>
-            <DetailsContainer>
-              
-            </DetailsContainer>
-          </InfoContainer>
-
-          <ThumbnailContainer>
-
-          </ThumbnailContainer>
-
+            {projects[currentTab]}
           </ProjectsContainer>
       </Layout>
     );
@@ -57,11 +48,11 @@ export const query = graphql`
         details
         id
         photos
-        sub_headers
         title
         year
         summary
         link
+        subheaders
       }
     }
   }
