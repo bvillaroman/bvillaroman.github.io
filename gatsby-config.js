@@ -17,6 +17,10 @@ module.exports = {
         fieldName: "bvillaroman",
         // URL to query from
         url: "https://bvillaroman.herokuapp.com/v1/graphql",
+        headers: {
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          'x-hasura-admin-secret': `${process.env.API_KEY}`,
+        },
       },
     },
     {

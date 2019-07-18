@@ -55,13 +55,13 @@ export const query = graphql`
     bvillaroman {
       project {
         details
-        title
         id
         photos
         sub_headers
+        title
         year
-        link
         summary
+        link
       }
     }
   }
