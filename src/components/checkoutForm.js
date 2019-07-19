@@ -38,7 +38,8 @@ class CheckoutForm extends React.Component {
     const description = `${this.state.description} on date: ${date}`
     const amount = this.state.amount * 100;
     let {token} = await this.props.stripe.createToken({name});
-    let response = await fetch("https://ugi3nmc0e1.execute-api.us-east-1.amazonaws.com/dev/checkout", {
+    console.log(token)
+    let response = await fetch(process.env.BACKEND_URL, {
       method: "POST",
       headers: new Headers({
         "Content-Type": "application/json",
