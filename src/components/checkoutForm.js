@@ -18,7 +18,7 @@ class CheckoutForm extends React.Component {
     super(props);
     this.submit = this.submit.bind(this);
     this.state = {
-      email:'',
+      receipt_email:'',
       date:'',
       name: '',
       amount:'',
@@ -34,9 +34,10 @@ class CheckoutForm extends React.Component {
   }
 
   async submit(ev) {
-    const {date} = this.state
+    const {date,receipt_email,name} = this.state
+    const description = `${this.state.description} on date: ${date}`
     const amount = this.state.amount * 100;
-    let {token} = await this.props.stripe.createToken({name: date});
+    let {token} = await this.props.stripe.createToken({name});
     let response = await fetch("https://ugi3nmc0e1.execute-api.us-east-1.amazonaws.com/dev/checkout", {
       method: "POST",
       headers: new Headers({
@@ -45,6 +46,8 @@ class CheckoutForm extends React.Component {
       body: JSON.stringify({
         token,
         amount,
+        description, 
+        receipt_email
       })
     })
     if(response.ok){ 
@@ -68,7 +71,7 @@ class CheckoutForm extends React.Component {
       <div className="checkout">
         <FormContainer>
           <FormRow>
-            <Email placeholder={'Email'} type='text' name='email' value={this.state.email} onChange={this.handleInput}/>
+            <Email placeholder={'Email'} type='text' name='receipt_email' value={this.state.receipt_email} onChange={this.handleInput}/>
             <Name  placeholder={'First, Last Name'} type='text' name='name' value={this.state.name} onChange={this.handleInput}/>
             <Date  placeholder={'Date'}  type='text' name='date'  value={this.state.date}  onChange={this.handleInput}/>
           </FormRow>
