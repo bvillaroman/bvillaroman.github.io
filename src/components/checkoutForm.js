@@ -1,6 +1,17 @@
 import React from 'react';
 import { injectStripe} from 'react-stripe-elements';
-import {Card,SendAmount,Email,Date,Amount,FormContainer,FormRow,SentText} from '../styles/components'
+import {
+  Card,
+  SendAmount,
+  Email,
+  Date,
+  Amount,
+  FormContainer,
+  FormRow,
+  SentText,
+  Name,
+  Description
+} from '../styles/components'
 
 class CheckoutForm extends React.Component {
   constructor(props) {
@@ -9,6 +20,7 @@ class CheckoutForm extends React.Component {
     this.state = {
       email:'',
       date:'',
+      name: '',
       amount:'',
       description:'',
       disabled: false,
@@ -57,11 +69,17 @@ class CheckoutForm extends React.Component {
         <FormContainer>
           <FormRow>
             <Email placeholder={'Email'} type='text' name='email' value={this.state.email} onChange={this.handleInput}/>
-            <Date  placeholder={'Date'}  type='test'  name='date' value={this.state.date} onChange={this.handleInput}/>
-            <Amount placeholder={'Amount'}  name='amount' value={this.state.amount} onChange={this.handleInput}/>
+            <Name  placeholder={'First, Last Name'} type='text' name='name' value={this.state.name} onChange={this.handleInput}/>
+            <Date  placeholder={'Date'}  type='text' name='date'  value={this.state.date}  onChange={this.handleInput}/>
           </FormRow>
+
+          <FormRow>
+            <Description placeholder={'Invoice Description (optional)'}  type='text' name='description'  value={this.state.description}  onChange={this.handleInput}/>
+          </FormRow>
+
           <FormRow>
             <Card ref={e => {this.card = e}}/>
+            <Amount placeholder={'Amount'}  name='amount' value={this.state.amount} onChange={this.handleInput}/>
             <SendAmount onClick={this.submit} disabled={this.state.disabled}>Send</SendAmount>
           </FormRow>
           { 
