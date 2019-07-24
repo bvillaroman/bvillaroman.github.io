@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 import {CardElement} from 'react-stripe-elements';
 import Link from "gatsby-link"
 import Tabs from '@material-ui/core/Tabs';
@@ -23,9 +23,12 @@ export const HeaderHighlight = styled(Link)`
   }
 `;
 
+
+
 // CONTACT PAGE COMPONENTS
 
-export const EmailHighlight = styled.span`
+
+export const EmailHighlight = styled.a`
   font-size: 3rem;
   font-weight: 350;
   color: #FF9800;
@@ -133,15 +136,14 @@ export const FormContainer = styled.div`
 `
 export const SentText = styled.div`
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif!important;  
-  width: 150px;
+  width: 100%;
   height: 40px;
   color: black;
   display: inline-block;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
   vertical-align:top;
-  margin 10px auto;
-  float: right;
+  text-align: center;
 
 `
 
@@ -203,7 +205,9 @@ export const DetailsContainer = styled.div`
 `;
 
 export const Loading = styled(CircularProgress)`
-
+    && {
+      color: #FC5B02;
+    }
 `
 
 // PHOTOGRAPHY PAGE COMPONENTS

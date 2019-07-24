@@ -35,7 +35,7 @@ class Contact extends React.Component{
             { 
               this.state.currentTab === 0 && (
               <ContactContainer>
-                <h1>Work inquiry, question, or something else? <EmailHighlight >Email Me.</EmailHighlight></h1>
+                <h1>Work inquiry, question, or something else? <EmailHighlight href="mailto:bvillaroman@gmail.com">Email Me.</EmailHighlight></h1>
                 <br/>
               </ContactContainer>
               )
