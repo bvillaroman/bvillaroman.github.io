@@ -5,6 +5,7 @@ const Image = (props) => {
     const thumbnail = "https://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/c_scale,w_600/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
 
     const source = "https://res.cloudinary.com/dyeerzayu/image/" + props.source.type + "/v" + props.source.version + "/" + props.source.public_id + "." + props.source.format
+
     return (
       <ImageItem
         image={{

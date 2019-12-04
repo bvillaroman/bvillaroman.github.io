@@ -1,7 +1,11 @@
 import React from "react"
 import {TitleContainer, InfoContainer, DetailsContainer, ThumbnailContainer, Divider} from '../styles/components.js'
+import Image from "./image"
 
-const Project = ({ project : {details, title, id, photos, sub_headers, year, link, summary }}) => {
+
+const Project = ({ project : {details, title, id, photo, sub_headers, year, link, summary }}) => {
+
+  console.log(photo[0])
   return(
     <React.Fragment>
       <InfoContainer>
@@ -15,7 +19,10 @@ const Project = ({ project : {details, title, id, photos, sub_headers, year, lin
       </InfoContainer>
       
       <ThumbnailContainer>
-
+        <a href={link}>
+          <Image source={photo[0]}/>
+          {/* <img src={ photos[0]} /> */}
+        </a>
       </ThumbnailContainer>
     </React.Fragment>
   );

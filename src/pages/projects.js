@@ -27,14 +27,15 @@ class ProjectsPage extends React.Component{
   render(){
     const {currentTab, projects} = this.state;
 
-    const labels = this.props.data.bvillaroman.project.map((project) => (project.title))
+    // const labels = this.props.data.bvillaroman.project.map((project) => (project.title))
 
+    const labels = [this.props.data.bvillaroman.project[1].title]
     // console.log(this.props);
     return(
       <Layout>
           <SubNavBar currentTab={currentTab} switchSections={this.switchSections} labels={labels}/>
           <ProjectsContainer>
-            {projects[currentTab]}
+            {projects[1]}
           </ProjectsContainer>
       </Layout>
     );
@@ -47,7 +48,7 @@ export const query = graphql`
       project {
         details
         id
-        photos
+        photo
         title
         year
         summary
