@@ -21,7 +21,6 @@ const Project = ({ project : {details, title, id, photo, sub_headers, year, link
       <ThumbnailContainer>
         <a href={link}>
           <Image source={photo[0]}/>
-          {/* <img src={ photos[0]} /> */}
         </a>
       </ThumbnailContainer>
     </React.Fragment>
