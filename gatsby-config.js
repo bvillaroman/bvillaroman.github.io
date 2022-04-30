@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `bvillaroman`,
-    siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
     "gatsby-plugin-styled-components",
