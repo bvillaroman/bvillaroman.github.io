@@ -1,51 +1,38 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 module.exports = {
   siteMetadata: {
-    title : "bvillaroman",
+    title: `bvillaroman`,
+    siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-graphql",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        // This type will contain remote schema Query type
-        typeName: "BVILLAROMAN",
-        // This is the field under which it's accessible
-        fieldName: "bvillaroman",
-        // URL to query from
-        url: "https://bvillaroman.herokuapp.com/v1/graphql",
-        headers: {
-          // Learn about environment variables: https://gatsby.dev/env-vars
-          'x-hasura-admin-secret': `${process.env.API_KEY}`,
-        },
+        "name": "images",
+        "path": "./src/images/"
       },
+      __key: "images"
     },
-    {
-      resolve: `gatsby-plugin-stripe`,
+  {
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        async: true,
+        name: "Bvillaroman",
+        short_name: "Bvillaroman",
+        start_url: "/",
+        background_color: "#6b37bf",
+        theme_color: "#6b37bf",
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: "standalone",
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
+        // An optional attribute which provides support for CORS check.
+        // If you do not provide a crossOrigin option, it will skip CORS for manifest.
+        // Any invalid keyword or empty string defaults to `anonymous`
+        crossOrigin: `use-credentials`,
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `projects`,
-        path: `${__dirname}/src/projects`,
-      },
-    },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-source-stripe`,
-      options: {
-        objects: ['Balance', 'BalanceTransaction', 'Product', 'ApplicationFee', 'Sku', 'Subscription'],
-        secretKey:process.env.STRIPE_API_SECRET,
-        downloadFiles: true
-      }
-    },
-  ],
-}
+    }
+  ]
+};

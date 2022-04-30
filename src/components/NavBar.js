@@ -1,43 +1,63 @@
-import React from 'react'
-import  { NavbarLink, Logo, LinksContainer, LogoContainer, NavBarContainer } from '../styles/components'
+import * as React from "react"
+import styled from "styled-components";
+import { Link } from "gatsby"
 
-export default () => {
+const MainOrange = "#FF9800";
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0px;
+`;
+const Logo = styled(Link)`
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: ${MainOrange};
+`;
+const NavLinks = styled(Link)`
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 350;
+  padding: 0.5rem;
+`;
+const activeStyle = {
+  color: MainOrange 
+}
+const LinksContainer = styled.div`
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const NavBar = () => {
   return (
-    <NavBarContainer>
-      <LogoContainer>
-        <Logo 
-          to = "/" 
-          activeStyle={{ 
-            color: "#FF9800" 
-          }}
-        >BVILLAROMAN</Logo>
-      </LogoContainer>
+    <Container>
+      <Logo
+        to="/"
+        activeStyle={ activeStyle }
+      >
+        BVILLAROMAN
+      </Logo>
       <LinksContainer>
-        <NavbarLink 
-          to="/photography"  
-          activeStyle={{ 
-            color: "#FF9800" 
-          }}
-        >
-            PHOTOGRAPHY
-        </NavbarLink>
-        <NavbarLink 
-          to="/projects"  
-          activeStyle={{ 
-            color: "#FF9800" 
-          }}
-        >
-            PROJECTS
-        </NavbarLink>
-        <NavbarLink 
-          to="/contact"  
-          activeStyle={{ 
-            color: "#FF9800" 
-          }}
-        >
-            CONTACT
-        </NavbarLink>
-      </LinksContainer>     
-    </NavBarContainer>
+      <NavLinks
+        to="/projects"  
+        activeStyle={ activeStyle }
+      >
+        Projects
+      </NavLinks>
+      <NavLinks
+        to="/info"  
+        activeStyle={ activeStyle }
+      >
+        Info
+      </NavLinks>
+      </LinksContainer>
+
+    </Container>
   )
 }
+
+export default NavBar;
