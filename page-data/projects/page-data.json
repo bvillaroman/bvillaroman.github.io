@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-pages-projects-js","path":"/projects/","webpackCompilationHash":"73bdd27db646be165e15","result":{"data":{"bvillaroman":{"project":[{"details":["React JS with GatsbyJS, AWS Lambda, AWS S3, AWS SageMaker, NodeJS and MongoDB, Python3 with Tensor Flow and Pandas"],"id":2,"photos":null,"title":"Airbnb Price Estimator","year":2018,"summary":null,"link":null,"subheaders":["Technology used"]},{"details":["The Universal Design Compass is tool that allows individuals to record, time, and analyze their  progress while undergoing a design process.  Understanding your flaws and strengths in where you allocate your time and effort in your design process will allow you to improve the way you plan your future design processes.  With today’s technology being mainly mobile, we want to allow users to have the universal design compass in the palm of their hands.","  - React JS with GatsbyJS   - AWS Amplify, AWS DynamoDB, AWS Appsync   - Graphql"],"id":1,"photos":null,"title":"Universal Design Compass","year":2019,"summary":null,"link":null,"subheaders":["Mission","Technology Used"]}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{
+    "componentChunkName": "component---src-pages-projects-js",
+    "path": "/projects/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}
