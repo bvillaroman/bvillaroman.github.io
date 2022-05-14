@@ -17,4 +17,7 @@ const Container = styled.div`
   width: 80%;
   margin: 0 auto;
   font-family: -apple-system  Roboto, Helvetica Neue, sans-serif;
+  @media(max-width: 768px) {
+		width: 90%;
+  }
 `;

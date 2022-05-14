@@ -36,6 +36,10 @@ const HeaderLine = styled.h2`
   margin: 2rem auto;
   text-align: center;
   width: 100%;
+  @media(max-width: 768px) {
+	   font-size: 1.5rem;
+		 margin-bottom: 0; 
+  }
 `;
 
 const SubHeaders = styled.div`
@@ -47,6 +51,10 @@ const SubHeaders = styled.div`
 
 const ContactDetails = styled.h1`
   width: 50%;
+  @media(max-width: 768px) {
+	   font-size: 1rem;
+		 width: 100%;
+  }
 `;
 
 const EmailHighlight = styled.a`
@@ -55,7 +63,6 @@ const EmailHighlight = styled.a`
   color: #FF9800;
   text-decoration: none;
   @media(max-width: 768px) {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1rem;
   }
 `;

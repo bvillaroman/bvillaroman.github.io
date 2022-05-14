@@ -11,10 +11,13 @@ const Container = styled.div`
   padding: 0.5rem 0px;
 `;
 const Logo = styled(Link)`
+  color: black;
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-  color: ${MainOrange};
+  @media(max-width: 768px) {
+  font-size: 1.5rem;
+  }
 `;
 const NavLinks = styled(Link)`
   color: black;
@@ -22,14 +25,21 @@ const NavLinks = styled(Link)`
   font-size: 1rem;
   font-weight: 350;
   padding: 0.5rem;
+  @media(max-width: 768px) {
+    font-size: 0.8rem;
+    padding: 0.1rem;
+  }
 `;
 const activeStyle = {
-  color: MainOrange 
+  color: MainOrange
 }
 const LinksContainer = styled.div`
   width: 350px;
   display: flex;
   justify-content: space-between;
+  @media(max-width: 768px) {
+    width: 6rem;
+  }
 `;
 
 const NavBar = () => {
@@ -43,16 +53,16 @@ const NavBar = () => {
       </Logo>
       <LinksContainer>
       <NavLinks
-        to="/projects"  
-        activeStyle={ activeStyle }
+	to="/projects"  
+	activeStyle={ activeStyle }
       >
-        Projects
+	Projects
       </NavLinks>
       <NavLinks
-        to="/info"  
-        activeStyle={ activeStyle }
+	to="/info"  
+	activeStyle={ activeStyle }
       >
-        Info
+	Info
       </NavLinks>
       </LinksContainer>
 

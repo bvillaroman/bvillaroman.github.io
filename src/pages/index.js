@@ -9,7 +9,6 @@ const IndexPage = () => {
       <title>bvillaroman</title>
       <Container>
         <h1>Designer, developer & friend.</h1>
-        <h3>I design and code beautiful web applications.</h3>
         <br/>
         <h2>Have a business, idea or project in mind?</h2>
         <h2>Let's have a <HeaderHighlight to="/info">conversation</HeaderHighlight>.</h2>
@@ -39,11 +38,6 @@ const Container = styled.div`
   h2 {
       font-size: 2rem;
       font-weight: 350;
-  };
-  h3 {
-      font-size: 1.8rem;
-      font-weight: 300;
-      color: rgba(0,0,0,0.55)
   };
   margin: 10% auto;
   @media(max-width: 768px) {
